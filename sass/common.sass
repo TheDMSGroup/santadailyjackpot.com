@@ -1,0 +1,761 @@
+@import compass/css3
+
+$black: #444
+$midnight: #181e2b
+$gold: #f8b61f
+$gold-dk: #ed8e19
+$gold-lt: #f7e08e
+$red: #de3b29
+$red-dk: #b42f1f
+$gray: #b5b5b5
+$gray-lt: lighten($gray, 10%)
+$gray-md: darken($gray, 10%)
+$gray-dk: darken($gray, 20%)
+$green: #36c86d
+
+$primary: $red !default
+$primary-lt: lighten($primary, 15%) !default
+$primary-md: darken($primary, 10%) !default
+$primary-dk: darken($primary, 20%) !default
+$secondary: $gold !default
+$secondary-lt: $gold-lt
+$secondary-md: #f5ac1e
+$secondary-dk: $gold-dk
+// $secondary-lt: lighten($secondary, 10%) !default
+// $secondary-md: darken($secondary, 10%) !default
+// $secondary-dk: darken($secondary, 30%) !default
+
+// -------------------------- COMMON --------------------------------------------------
+
+// mixins
+
+=centered
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
+
+// extendables
+.uppercase
+  text-transform: uppercase
+  letter-spacing: 1px
+
+.small-header
+  @extend .uppercase
+  font-size: 18px
+
+.btn-small
+  font-size: 13px
+  @extend .uppercase
+  padding: 10px 30px
+  +border-radius(2px)
+
+// common
+body
+  font-family: Montserrat, Arial, sans-serif
+  background: white
+  color: #444
+  font-size: 14px
+  font-weight: lighter
+
+p, ul, li
+  color: #666
+  line-height: 1.75em
+
+blockquote
+  font-style: italic
+  color: #8f8f8f
+
+img
+  max-width: 100%
+
+li
+  line-height: 1.75em
+
+a
+  color: $primary
+  cursor: pointer
+  &:hover
+    color: $primary-lt
+
+h1
+  font-size: 36px
+  font-weight: 600
+  margin-bottom: 10px
+
+h2
+  font-size: 28px
+  font-weight: 600
+  margin-bottom: 10px
+
+h3
+  font-weight: 600
+  font-size: 21px
+  margin-bottom: 10px
+
+h4
+  font-weight: 600
+  font-size: 16px
+
+select, input[type="text"]
+  border: 1px solid #ccc
+  border-radius: 3px
+  padding: 5px 10px
+  box-sizing: border-box
+  font-family: Montserrat, Arial, sans-serif
+  font-size: 16px
+
+.left
+  float: left
+
+.container
+  width: 100%
+  max-width: 100%
+  padding: 0 15px
+
+.container > div
+  padding-left: 10px
+  padding-right: 10px
+
+.content
+  > div
+    margin-bottom: 40px
+    clear: both
+    &:after
+      content: ""
+      clear: both
+      display: block
+
+.btn
+  font-size: 18px
+  font-weight: 600
+  color: black
+  padding: 10px 30px
+  background: $secondary
+  background-image: linear-gradient(top, $secondary-lt, $secondary, $secondary, $secondary-dk)
+  background-image: -webkit-gradient(linear, top, color-stop(0%,$secondary-lt), color-stop(25%,$secondary), color-stop(50%,$secondary), color-stop(100%,$secondary-dk))
+  background: -moz-linear-gradient(top, $secondary-lt, $secondary, $secondary, $secondary-dk)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$secondary}', endColorstr='#{$secondary-dk}')
+  border-radius: 5px
+  border: 1px solid $secondary-dk
+  white-space: normal
+  cursor: pointer
+  text-shadow: rgba(255,255,255,0.2) 0 1px 0
+  &:hover
+    background: $secondary-md
+    background-image: linear-gradient(top, $secondary-lt, $secondary, $secondary-dk, $secondary-dk)
+    background-image: -webkit-gradient(linear, top, color-stop(0%,$secondary-lt), color-stop(25%,$secondary), color-stop(50%,$secondary), color-stop(100%,$secondary-dk))
+    background: -moz-linear-gradient(top, $secondary-lt, $secondary, $secondary, $secondary-dk)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$secondary}', endColorstr='#{$secondary-dk}')
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$secondary-lt}', endColorstr='#{$secondary-md}')
+    text-shadow: rgba(255,255,255,0.6) 0 1px 0
+    top: 1px
+    position: relative
+
+  &.btn-sm
+    font-size: 16px
+    text-transform: capitalize
+    font-weight: normal
+    box-shadow: none
+    letter-spacing: 0
+  &.next
+    &:after
+      content: "\203A"
+      padding-left: 5px
+
+.no-btn
+  color: rgba(255,255,255,0.9)
+  background: rgba(0,0,0,0.2)
+  padding: 8px 20px
+  font-style: italic
+  border-radius: 5px
+  &:hover
+    color: white
+    background: rgba(0,0,0,0.4)
+    text-decoration: none
+.btn-link
+  display: block
+  &.previous
+    margin: 30px auto 10px
+    &:before
+      content: "\2039"
+      padding-right: 5px
+  &:hover
+    color: white
+    text-decoration: none
+
+select:-moz-focusring
+  outline: none
+  color: transparent
+  text-shadow: 0 0 0 #000
+
+.disclaimer
+  font-size: 13px
+  font-style: italic
+
+// header
+
+.header
+  background: $midnight
+  color: white
+  text-align: center
+  overflow: hidden
+  .header-brand a
+    background-image: url('../images/santa-jackpot-logo.png')
+    background-repeat: no-repeat
+    display: block
+    float: left
+    margin: auto
+    width: 174px
+    height: 72px
+    text-indent: -999px
+    margin-right: 10px
+  p
+    color: $red
+  a
+    color: white
+    &:hover
+      color: white
+  .rules
+    padding-top: 20px
+  #mark
+    max-width: 500px
+    float: left
+    overflow: hidden
+    padding-top: 20px
+    marquee
+      float: left
+      width: 300px
+    li
+      color: white
+      list-style: none
+      margin-right: 10px
+      display: inline
+      b
+        color: $red
+    .recent
+      text-transform: uppercase
+      letter-spacing: 1px
+      color: $red
+      font-weight: 600
+      display: inline
+      float: left
+      margin-right: 10px
+
+.body
+  h2
+    margin-top: 60px
+    color: $red
+  ul
+    padding-left: 5px
+    list-style: none
+    li::before
+      content: "• "
+      color: $red
+      font-weight: 800
+      font-size: 28px
+      position: relative
+      top: 4px
+.adsense-row
+  padding: 15px
+  text-align: center
+  margin-left: 0
+  margin-right: 0
+  .adsense
+    display: block
+    margin: auto
+    background: #ddd
+    width: 728px
+    height: 90px
+    text-align: center
+    max-width: 100%
+    span
+      display: block
+      font-size: 24px
+      color: #999
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
+
+.footer
+  clear: both
+  overflow: auto
+  padding: 20px 60px
+  text-align: center
+  p
+    color: #999
+    text-align: center
+
+// animated arrow
+form
+  position: relative
+  padding-top: 50px
+
+.arrow
+  display: block
+  position: absolute
+  border-left: 15px solid transparent
+  border-right: 15px solid transparent
+  border-top: 15px solid $gold
+  top: 15px
+  left: 50%
+  margin-left: -15px
+  z-index: 2
+  animation: float 1.5s ease-in-out infinite
+
+.animated
+  animation-duration: 2s
+  animation-fill-mode: both
+  animation-timing-function: ease-in-out
+  animation-iteration-count: infinite
+
+@keyframes bounce
+  0%, 100%
+    transform: translateY(0)
+
+  50%
+    transform: translateY(-10px)
+
+.bounce
+  animation-name: bounce
+
+
+//////////////////////////////////////  INDIVIDUAL PAGE STYLES  ///////////////////////////////////////
+
+// forms
+.form-banner
+  background: $midnight url('../images/santa-bg.jpg') left bottom no-repeat
+  background-size: 800px
+  min-height: 500px
+  padding: 20px 60px
+  margin-top: -1px
+
+.form-container
+  background: white
+  border-radius: 5px
+  padding: 30px 40px
+
+.form-header
+  text-align: center
+  h1, h2, p
+    color: $red
+    @extend .uppercase
+    margin: 5px 0
+  h1
+    font-size: 14px
+  h2
+    font-size: 38px
+    font-weight: 800
+  p
+    font-size: 21px
+    font-weight: 600
+
+#home-page, #thanks-page
+  .form-header
+    h1
+      font-size: 21px
+    h2
+      font-size: 72px
+
+.form-div
+  text-align: center
+  input
+    height: 47px
+.form-note
+  color: #999
+  font-style: italic
+  font-size: 12px
+  margin-top: 10px
+
+.alert
+  padding: 5px 10px
+  border: none
+
+// offers
+#offer-page
+  .offer
+    position: relative
+    overflow: auto
+    &:before
+      top: 0
+      left: 50%
+      border: solid transparent
+      content: " "
+      height: 0
+      width: 0
+      position: absolute
+      pointer-events: none
+      border-top-color: $midnight
+      border-width: 15px
+      margin-left: -15px
+  .header-brand a
+    background-image: url('../images/santa-jackpot-logo-white.png')
+    margin-top: 10px
+  .survey-header
+    padding-top: 10px
+    .progress-bubbles
+      margin-bottom: 10px
+      .progress
+        background: #8c8f95
+        display: inline-block
+        width: 120px
+        margin: 0 -4px
+        height: 8px
+        border-radius: 0
+        position: relative
+        top: -2px
+        .progress-bar
+          background: $green
+    .bubble
+      background: #8c8f95
+      z-index: 3px
+      height: 30px
+      width: 30px
+      border-radius: 15px
+      font-weight: 600
+      font-size: 18px
+      text-align: center
+      display: inline-block
+      line-height: 30px
+      &.active
+        background: $green
+    p
+      color: white
+  .form-container
+    padding-top: 50px
+    text-align: center
+    margin-bottom: 60px
+    .progress
+      height: 8px
+      .progress-bar
+        background: $green
+  h1
+    color: $red
+    font-size: 28px
+    font-weight: normal
+    margin-bottom: 30px
+
+  // carousel
+  .carousel-indicators
+    position: unset
+    margin: 30px auto 20px
+    li
+      border: 1px solid #ddd
+    .active
+      background: #ddd
+
+  label.section_label
+    color: $primary
+    text-align: center
+    font-size: 18px
+    display: block
+  label.consent
+    font-weight: normal
+
+// thanks
+#thanks-page
+  .header
+    background: #bac0ce
+  .form-header
+    h1
+      color: black
+    h2
+      color: white
+  .form-container
+    background: none
+    padding-top: 50px
+  .form-banner
+    background: #bac0ce url('../images/santa-bg-light.jpg') bottom right no-repeat
+    border-bottom: 10px solid $red-dk
+    margin-bottom: 30px
+  .social-share
+    text-align: center
+    padding: 40px 0 0
+    a:hover
+      position: relative
+      top: 1px
+    img
+      margin: 0 10px 0
+    p
+      color: white
+      margin-top: 15px
+      font-size: 18px
+
+// privacy
+
+#privacy
+  .header
+    margin-bottom: 60px
+  h1
+    font-size: 48px
+    color: $primary
+    text-shadow: none
+  h2
+    color: $primary
+    font-weight: bold
+    border-bottom: 3px solid $primary
+    padding-bottom: 10px
+    margin: 30px 0
+    text-align: left
+
+//////////////////////////////////////  MEDIA QUERIES  ///////////////////////////////////////
+
+@media (min-width: 1200px)
+  .form-header
+    h1, p
+      font-size: 21px
+    h2
+      font-size: 56px
+
+@media (max-width: 1200px)
+  .container
+    max-width: 100%
+  .form-header
+    h1, p
+      font-size: 18px
+    h2
+      font-size: 48px
+  #home-page, #thanks-page
+    .form-header
+      h1, p
+        font-size: 18px
+      h2
+        font-size: 48px
+
+@media (min-width: 769px)
+  .body
+    margin: 30px 20px 60px
+  .container > div
+    padding-left: 60px
+    padding-right: 60px
+  .form-div
+    input, select, .btn
+      display: block
+      width: 60%
+      margin: 0 auto 15px
+  #home-page
+    .form-div.joined-button
+      input, .btn
+        display: inline
+        margin: 0
+      input
+        width: 50%
+        border-radius: 5px 0 0 5px
+      .btn
+        width: auto
+        border-radius: 0 5px 5px 0
+        position: relative
+        left: -5px
+        top: -2px
+
+// Responsive: Landscape phone to desktop/tablet
+@media (max-width: 768px)
+  .form-banner
+    background-size: 400px
+  .form-container
+    margin-bottom: 180px
+  .footer
+    .disclosure
+      display: none
+  //adsense
+  .adsense-row
+    padding: 15px 0
+  .header
+    #mark
+      display: none
+  #offers
+    .progress-container
+      border-top: 1px solid #ddd
+      background: #f2f2f2
+      text-align: center
+      padding-bottom: 10px
+      .progress-label
+        color: $primary
+      .progress
+        border: 1px solid #ddd
+    .offer-header
+      text-align: center
+      padding: 5px 10px
+      span
+        font-style: italic
+        font-size: 13px
+    .lexlaw
+      img
+        max-width: 90%
+
+
+@media (min-width: 699px)
+  .form
+    padding: 40px
+
+  .radioSelectContainer >
+    label
+      display: none
+  .extendedRadioContainer
+    display: none
+  .radioContainer
+    label
+      margin-right: 10px
+      font-size: 16px
+      &:last-child
+        margin-right: 0
+    input
+      margin-right: 3px
+
+@media (max-width: 699px)
+
+
+  // converted select to buttons
+  .radioSelectContainer, .radioContainer
+    position: relative
+    overflow: hidden
+    >
+    select
+      display: none
+    label, .labelContainer
+      display: block
+      margin: 10px 0
+      background: #f2f2f2
+      background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f2f2f2))
+      background: -moz-linear-gradient(top, #fcfcfc, #f2f2f2)
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f2f2f2')
+      border-radius: 4px
+      border: 2px solid #e6e6e6
+      padding: 10px
+      cursor: pointer
+      &:hover
+        background: #dbdbdb
+        background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#dbdbdb))
+        background: -moz-linear-gradient(top, #fcfcfc, #dbdbdb)
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#dbdbdb')
+      >
+        span
+          text-align: left
+          display: block
+          font-size: 16px
+          color: #444
+          background: url('../images/right-arrow-gray.png') no-repeat right center
+          background-size: 8px 13px
+        input
+          position: absolute
+          top: -20px
+          &:checked + span
+            background-color: #404040
+            color: #F7F7F7
+      label
+        display: none
+      &.active
+        background: #777
+        border: 2px solid #777
+        overflow: auto
+        >
+          span
+            color: white
+            margin-bottom: 10px
+            background: url('../images/down-arrow-gray.png') no-repeat right center
+            background-size: 13px 8px
+        label
+          display: block
+          width: 48%
+          float: left
+          margin: 3px 1%
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+@media (max-width: 480px)
+  body
+    background: #c4c9d3
+  .header
+    height: 60px
+    padding: 0px 20px
+    text-align: center
+    .header-brand a
+      float: none
+      margin: auto
+      width: 132px
+      height: 55px
+      background-size: 132px
+  .form-banner
+    background-size: 360px
+    border-bottom: 5px solid $red
+  .form-header
+    h1
+      font-size: 13px
+      color: white
+      text-shadow: 0 2px 0 $red-dk
+    h2
+      font-size: 36px
+      color: white
+      text-shadow: 0 2px 0 $red-dk
+    p
+      font-size: 14px
+
+  #home-page, #thanks-page
+    .form-header
+      h1, p
+        font-size: 14px
+      h2
+        font-size: 48px
+  .form-container
+    background: none
+    padding: 0
+    margin-bottom: 100px
+  form
+    input, select
+      display: block
+      text-align: center
+      width: 80%
+      margin: 0 auto 15px
+    .btn
+      width: 80%
+  .body, .adsense-row
+    display: none
+  .footer
+    padding: 20px 0
+    background: #c4c9d3
+    p
+      color: #666
+      font-size: 11px
+      line-height: 14px
+  #home-page
+    form
+      padding-top: 20px
+      .arrow
+        display: none
+  body#offer-page
+    background: white
+    .header
+      height: auto
+      .header-brand a
+        margin-top: 0px
+        background-image: url('../images/santa-jackpot-logo.png')
+      .survey-header
+        padding-top: 0px
+      .progress-bubbles
+        display: none
+    .form-container
+      padding-top: 30px
+      margin-bottom: 160px
+    .footer
+      background: none
+  #thanks-page
+    .form-banner
+      background-size: 460px
+      border-bottom: none
+      margin-bottom: 0px
+    .form-container
+      padding-top: 20px
+      margin-bottom: 220px
+    .social-share
+      padding-top: 20px
+      .hashtag
+        display: none
+    .form-header
+      h1, h2
+        text-shadow: none
+    .footer
+      background: white
+  #privacy
+    h1
+      font-size: 32px
+    h2
+      font-size: 21px
