@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 38, ../sass/common.sass */
-.uppercase, .small-header, .btn-small, .form-header h1, .form-header h2, .form-header p {
+.uppercase, .small-header, .btn-small, .ll .form-header h1, .ll .form-header h2, .ll .form-header p {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -63,7 +63,7 @@ a:hover {
 /* line 80, ../sass/common.sass */
 h1 {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 600 !important;
   margin-bottom: 10px;
 }
 
@@ -128,7 +128,218 @@ select, input[type="text"] {
 }
 
 /* line 128, ../sass/common.sass */
-.btn {
+select:-moz-focusring {
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/* line 133, ../sass/common.sass */
+.disclaimer {
+  font-size: 13px;
+  font-style: italic;
+}
+
+/* line 139, ../sass/common.sass */
+.header {
+  background: #181e2b;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 144, ../sass/common.sass */
+.header .header-brand a {
+  background-image: url("../images/santa-jackpot-logo.png");
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  margin: auto;
+  width: 174px;
+  height: 72px;
+  text-indent: -999px;
+  margin-right: 10px;
+}
+/* line 154, ../sass/common.sass */
+.header p {
+  color: #de3b29;
+}
+/* line 156, ../sass/common.sass */
+.header a {
+  color: white;
+}
+/* line 158, ../sass/common.sass */
+.header a:hover {
+  color: white;
+}
+/* line 160, ../sass/common.sass */
+.header .rules {
+  padding-top: 20px;
+}
+/* line 162, ../sass/common.sass */
+.header #mark {
+  max-width: 500px;
+  float: left;
+  overflow: hidden;
+  padding-top: 20px;
+}
+/* line 167, ../sass/common.sass */
+.header #mark marquee {
+  float: left;
+  width: 300px;
+}
+/* line 170, ../sass/common.sass */
+.header #mark li {
+  color: white;
+  list-style: none;
+  margin-right: 10px;
+  display: inline;
+}
+/* line 175, ../sass/common.sass */
+.header #mark li b {
+  color: #de3b29;
+}
+/* line 177, ../sass/common.sass */
+.header #mark .recent {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #de3b29;
+  font-weight: 600;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 187, ../sass/common.sass */
+.body h2 {
+  margin-top: 60px;
+  color: #de3b29;
+}
+/* line 190, ../sass/common.sass */
+.body ul {
+  padding-left: 5px;
+  list-style: none;
+}
+/* line 193, ../sass/common.sass */
+.body ul li::before {
+  content: "• ";
+  color: #de3b29;
+  font-weight: 800;
+  font-size: 28px;
+  position: relative;
+  top: 4px;
+}
+
+/* line 200, ../sass/common.sass */
+.adsense-row {
+  padding: 15px;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 205, ../sass/common.sass */
+.adsense-row .adsense {
+  display: block;
+  margin: auto;
+  background: #ddd;
+  width: 728px;
+  height: 90px;
+  text-align: center;
+  max-width: 100%;
+}
+/* line 213, ../sass/common.sass */
+.adsense-row .adsense span {
+  display: block;
+  font-size: 24px;
+  color: #999;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 221, ../sass/common.sass */
+.footer {
+  clear: both;
+  overflow: auto;
+  padding: 20px 60px;
+  text-align: center;
+}
+/* line 226, ../sass/common.sass */
+.footer p {
+  color: #999;
+  text-align: center;
+}
+
+/* line 231, ../sass/common.sass */
+form, .formio-component-fieldset.form-div {
+  position: relative;
+  padding-top: 50px;
+}
+
+/* line 241, ../sass/common.sass */
+.ll .form-header {
+  text-align: center;
+}
+/* line 243, ../sass/common.sass */
+.ll .form-header h1, .ll .form-header h2, .ll .form-header p {
+  color: #de3b29;
+  margin: 5px 0;
+}
+/* line 247, ../sass/common.sass */
+.ll .form-header h1 {
+  font-size: 14px;
+}
+/* line 249, ../sass/common.sass */
+.ll .form-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+}
+/* line 252, ../sass/common.sass */
+.ll .form-header p {
+  font-size: 21px;
+  font-weight: 600;
+}
+/* line 257, ../sass/common.sass */
+.ll .form-header.big-header h1 {
+  font-size: 21px;
+}
+/* line 259, ../sass/common.sass */
+.ll .form-header.big-header h2 {
+  font-size: 72px;
+}
+/* line 263, ../sass/common.sass */
+.ll .arrow {
+  display: block;
+  position: absolute !important;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #f8b61f;
+  top: 15px;
+  left: 50%;
+  margin-left: -15px;
+  z-index: 2;
+  animation: float 1.5s ease-in-out infinite;
+}
+/* line 274, ../sass/common.sass */
+.ll .animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+/* line 284, ../sass/common.sass */
+.ll .bounce {
+  animation-name: bounce;
+}
+/* line 288, ../sass/common.sass */
+.ll .btn, .ll .btn-primary.btn-gold, .ll div.radio span {
   font-size: 18px;
   font-weight: 600;
   color: black;
@@ -144,8 +355,10 @@ select, input[type="text"] {
   cursor: pointer;
   text-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
 }
-/* line 143, ../sass/common.sass */
-.btn:hover {
+/* line 303, ../sass/common.sass */
+.ll .btn:hover, .ll .btn-primary.btn-gold:hover, .ll div.radio span:hover {
+  border: 1px solid #ed8e19;
+  color: black;
   background: #f5ac1e;
   background-image: linear-gradient(to bottom, #f7e08e, #f8b61f, #ed8e19, #ed8e19);
   background-image: -webkit-gradient(linear, top, color-stop(0%, #f7e08e), color-stop(25%, #f8b61f), color-stop(50%, #f8b61f), color-stop(100%, #ed8e19));
@@ -156,238 +369,73 @@ select, input[type="text"] {
   top: 1px;
   position: relative;
 }
-/* line 154, ../sass/common.sass */
-.btn.btn-sm {
-  font-size: 16px;
-  text-transform: capitalize;
-  font-weight: normal;
-  box-shadow: none;
-  letter-spacing: 0;
-}
-/* line 161, ../sass/common.sass */
-.btn.next:after {
-  content: "›";
-  padding-left: 5px;
-}
-
-/* line 165, ../sass/common.sass */
-.no-btn {
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(0, 0, 0, 0.2);
-  padding: 8px 20px;
-  font-style: italic;
-  border-radius: 5px;
-}
-/* line 171, ../sass/common.sass */
-.no-btn:hover {
-  color: white;
-  background: rgba(0, 0, 0, 0.4);
-  text-decoration: none;
-}
-
-/* line 175, ../sass/common.sass */
-.btn-link {
-  display: block;
-}
-/* line 177, ../sass/common.sass */
-.btn-link.previous {
-  margin: 30px auto 10px;
-}
-/* line 179, ../sass/common.sass */
-.btn-link.previous:before {
-  content: "‹";
-  padding-right: 5px;
-}
-/* line 182, ../sass/common.sass */
-.btn-link:hover {
-  color: white;
-  text-decoration: none;
-}
-
-/* line 186, ../sass/common.sass */
-select:-moz-focusring {
-  outline: none;
-  color: transparent;
-  text-shadow: 0 0 0 #000;
-}
-
-/* line 191, ../sass/common.sass */
-.disclaimer {
-  font-size: 13px;
-  font-style: italic;
-}
-
-/* line 197, ../sass/common.sass */
-.header {
-  background: #181e2b;
-  color: white;
+/* line 316, ../sass/common.sass */
+.ll .form-div {
   text-align: center;
-  overflow: hidden;
-}
-/* line 202, ../sass/common.sass */
-.header .header-brand a {
-  background-image: url("../images/santa-jackpot-logo.png");
-  background-repeat: no-repeat;
-  display: block;
-  float: left;
-  margin: auto;
-  width: 174px;
-  height: 72px;
-  text-indent: -999px;
-  margin-right: 10px;
-}
-/* line 212, ../sass/common.sass */
-.header p {
-  color: #de3b29;
-}
-/* line 214, ../sass/common.sass */
-.header a {
-  color: white;
-}
-/* line 216, ../sass/common.sass */
-.header a:hover {
-  color: white;
-}
-/* line 218, ../sass/common.sass */
-.header .rules {
-  padding-top: 20px;
-}
-/* line 220, ../sass/common.sass */
-.header #mark {
-  max-width: 500px;
-  float: left;
-  overflow: hidden;
-  padding-top: 20px;
-}
-/* line 225, ../sass/common.sass */
-.header #mark marquee {
-  float: left;
-  width: 300px;
-}
-/* line 228, ../sass/common.sass */
-.header #mark li {
-  color: white;
-  list-style: none;
-  margin-right: 10px;
-  display: inline;
-}
-/* line 233, ../sass/common.sass */
-.header #mark li b {
-  color: #de3b29;
-}
-/* line 235, ../sass/common.sass */
-.header #mark .recent {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #de3b29;
-  font-weight: 600;
-  display: inline;
-  float: left;
-  margin-right: 10px;
-}
-
-/* line 245, ../sass/common.sass */
-.body h2 {
-  margin-top: 60px;
-  color: #de3b29;
-}
-/* line 248, ../sass/common.sass */
-.body ul {
-  padding-left: 5px;
-  list-style: none;
-}
-/* line 251, ../sass/common.sass */
-.body ul li::before {
-  content: "• ";
-  color: #de3b29;
-  font-weight: 800;
-  font-size: 28px;
-  position: relative;
-  top: 4px;
-}
-
-/* line 258, ../sass/common.sass */
-.adsense-row {
-  padding: 15px;
-  text-align: center;
-  margin-left: 0;
-  margin-right: 0;
-}
-/* line 263, ../sass/common.sass */
-.adsense-row .adsense {
-  display: block;
-  margin: auto;
-  background: #ddd;
-  width: 728px;
-  height: 90px;
-  text-align: center;
-  max-width: 100%;
-}
-/* line 271, ../sass/common.sass */
-.adsense-row .adsense span {
-  display: block;
-  font-size: 24px;
-  color: #999;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* line 279, ../sass/common.sass */
-.footer {
-  clear: both;
-  overflow: auto;
-  padding: 20px 60px;
-  text-align: center;
-}
-/* line 284, ../sass/common.sass */
-.footer p {
-  color: #999;
-  text-align: center;
-}
-
-/* line 289, ../sass/common.sass */
-form {
-  position: relative;
-  padding-top: 50px;
-}
-
-/* line 293, ../sass/common.sass */
-.arrow {
-  display: block;
-  position: absolute;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid #f8b61f;
-  top: 15px;
-  left: 50%;
-  margin-left: -15px;
-  z-index: 2;
-  animation: float 1.5s ease-in-out infinite;
-}
-
-/* line 305, ../sass/common.sass */
-.animated {
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
 }
 /* line 318, ../sass/common.sass */
-.bounce {
-  animation-name: bounce;
+.ll .form-div input[type="text"], .ll .form-div input[type="email"] {
+  height: 47px;
+}
+/* line 320, ../sass/common.sass */
+.ll .form-note {
+  color: #999;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 10px;
+}
+/* line 327, ../sass/common.sass */
+.ll .form-div .form-control {
+  width: 60%;
+}
+/* line 330, ../sass/common.sass */
+.ll .control-label div {
+  text-align: left;
+  font-weight: lighter;
+  font-size: 12px;
+}
+/* line 335, ../sass/common.sass */
+.ll .formio-component-email {
+  display: inline;
+}
+/* line 337, ../sass/common.sass */
+.ll .formio-component-email .form-control {
+  height: 47px;
+}
+/* line 339, ../sass/common.sass */
+.ll .list-inline {
+  display: none;
 }
 
-/* line 325, ../sass/common.sass */
+/* line 344, ../sass/common.sass */
+#offer-page .ll .control-label {
+  color: #de3b29;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+/* line 349, ../sass/common.sass */
+#offer-page .ll .input-group {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+/* line 353, ../sass/common.sass */
+#offer-page .ll div.radio {
+  display: inline;
+}
+/* line 355, ../sass/common.sass */
+#offer-page .ll div.radio span, #offer-page .ll div.radio input {
+  display: inline-block;
+  min-width: 100px;
+}
+/* line 358, ../sass/common.sass */
+#offer-page .ll div.radio input[type="radio"] {
+  opacity: 0.01;
+  z-index: 100;
+}
+
+/* line 364, ../sass/common.sass */
 .form-banner {
   background: #181e2b url("../images/santa-bg.jpg") left bottom no-repeat;
   background-size: 800px;
@@ -396,75 +444,19 @@ form {
   margin-top: -1px;
 }
 
-/* line 332, ../sass/common.sass */
+/* line 371, ../sass/common.sass */
 .form-container {
   background: white;
   border-radius: 5px;
   padding: 30px 40px;
 }
 
-/* line 337, ../sass/common.sass */
-.form-header {
-  text-align: center;
-}
-/* line 339, ../sass/common.sass */
-.form-header h1, .form-header h2, .form-header p {
-  color: #de3b29;
-  margin: 5px 0;
-}
-/* line 343, ../sass/common.sass */
-.form-header h1 {
-  font-size: 14px;
-}
-/* line 345, ../sass/common.sass */
-.form-header h2 {
-  font-size: 38px;
-  font-weight: 800;
-}
-/* line 348, ../sass/common.sass */
-.form-header p {
-  font-size: 21px;
-  font-weight: 600;
-}
-
-/* line 354, ../sass/common.sass */
-#home-page .form-header h1, #thanks-page .form-header h1 {
-  font-size: 21px;
-}
-/* line 356, ../sass/common.sass */
-#home-page .form-header h2, #thanks-page .form-header h2 {
-  font-size: 72px;
-}
-
-/* line 359, ../sass/common.sass */
-.form-div {
-  text-align: center;
-}
-/* line 361, ../sass/common.sass */
-.form-div input {
-  height: 47px;
-}
-
-/* line 363, ../sass/common.sass */
-.form-note {
-  color: #999;
-  font-style: italic;
-  font-size: 12px;
-  margin-top: 10px;
-}
-
-/* line 369, ../sass/common.sass */
-.alert {
-  padding: 5px 10px;
-  border: none;
-}
-
-/* line 375, ../sass/common.sass */
+/* line 378, ../sass/common.sass */
 #offer-page .offer {
   position: relative;
   overflow: auto;
 }
-/* line 378, ../sass/common.sass */
+/* line 381, ../sass/common.sass */
 #offer-page .offer:before {
   top: 0;
   left: 50%;
@@ -478,20 +470,20 @@ form {
   border-width: 15px;
   margin-left: -15px;
 }
-/* line 390, ../sass/common.sass */
+/* line 393, ../sass/common.sass */
 #offer-page .header-brand a {
   background-image: url("../images/santa-jackpot-logo-white.png");
   margin-top: 10px;
 }
-/* line 393, ../sass/common.sass */
+/* line 396, ../sass/common.sass */
 #offer-page .survey-header {
   padding-top: 10px;
 }
-/* line 395, ../sass/common.sass */
+/* line 398, ../sass/common.sass */
 #offer-page .survey-header .progress-bubbles {
   margin-bottom: 10px;
 }
-/* line 397, ../sass/common.sass */
+/* line 400, ../sass/common.sass */
 #offer-page .survey-header .progress-bubbles .progress {
   background: #8c8f95;
   display: inline-block;
@@ -502,11 +494,11 @@ form {
   position: relative;
   top: -2px;
 }
-/* line 406, ../sass/common.sass */
+/* line 409, ../sass/common.sass */
 #offer-page .survey-header .progress-bubbles .progress .progress-bar {
   background: #36c86d;
 }
-/* line 408, ../sass/common.sass */
+/* line 411, ../sass/common.sass */
 #offer-page .survey-header .bubble {
   background: #8c8f95;
   z-index: 3px;
@@ -519,115 +511,115 @@ form {
   display: inline-block;
   line-height: 30px;
 }
-/* line 419, ../sass/common.sass */
+/* line 422, ../sass/common.sass */
 #offer-page .survey-header .bubble.active {
   background: #36c86d;
 }
-/* line 421, ../sass/common.sass */
+/* line 424, ../sass/common.sass */
 #offer-page .survey-header p {
   color: white;
 }
-/* line 423, ../sass/common.sass */
+/* line 426, ../sass/common.sass */
 #offer-page .form-container {
   padding-top: 50px;
   text-align: center;
   margin-bottom: 60px;
 }
-/* line 427, ../sass/common.sass */
+/* line 430, ../sass/common.sass */
 #offer-page .form-container .progress {
   height: 8px;
 }
-/* line 429, ../sass/common.sass */
+/* line 432, ../sass/common.sass */
 #offer-page .form-container .progress .progress-bar {
   background: #36c86d;
 }
-/* line 431, ../sass/common.sass */
+/* line 434, ../sass/common.sass */
 #offer-page h1 {
   color: #de3b29;
   font-size: 28px;
   font-weight: normal;
   margin-bottom: 30px;
 }
-/* line 438, ../sass/common.sass */
+/* line 441, ../sass/common.sass */
 #offer-page .carousel-indicators {
   position: unset;
   margin: 30px auto 20px;
 }
-/* line 441, ../sass/common.sass */
+/* line 444, ../sass/common.sass */
 #offer-page .carousel-indicators li {
   border: 1px solid #ddd;
 }
-/* line 443, ../sass/common.sass */
+/* line 446, ../sass/common.sass */
 #offer-page .carousel-indicators .active {
   background: #ddd;
 }
-/* line 446, ../sass/common.sass */
+/* line 449, ../sass/common.sass */
 #offer-page label.section_label {
   color: #de3b29;
   text-align: center;
   font-size: 18px;
   display: block;
 }
-/* line 451, ../sass/common.sass */
+/* line 454, ../sass/common.sass */
 #offer-page label.consent {
   font-weight: normal;
 }
 
-/* line 456, ../sass/common.sass */
+/* line 459, ../sass/common.sass */
 #thanks-page .header {
   background: #bac0ce;
 }
-/* line 459, ../sass/common.sass */
-#thanks-page .form-header h1 {
+/* line 462, ../sass/common.sass */
+#thanks-page .form-header.big-header h1 {
   color: black;
 }
-/* line 461, ../sass/common.sass */
-#thanks-page .form-header h2 {
+/* line 464, ../sass/common.sass */
+#thanks-page .form-header.big-header h2 {
   color: white;
 }
-/* line 463, ../sass/common.sass */
+/* line 466, ../sass/common.sass */
 #thanks-page .form-container {
   background: none;
   padding-top: 50px;
 }
-/* line 466, ../sass/common.sass */
+/* line 469, ../sass/common.sass */
 #thanks-page .form-banner {
   background: #bac0ce url("../images/santa-bg-light.jpg") bottom right no-repeat;
   border-bottom: 10px solid #b42f1f;
   margin-bottom: 30px;
 }
-/* line 470, ../sass/common.sass */
+/* line 473, ../sass/common.sass */
 #thanks-page .social-share {
   text-align: center;
   padding: 40px 0 0;
 }
-/* line 473, ../sass/common.sass */
+/* line 476, ../sass/common.sass */
 #thanks-page .social-share a:hover {
   position: relative;
   top: 1px;
 }
-/* line 476, ../sass/common.sass */
+/* line 479, ../sass/common.sass */
 #thanks-page .social-share img {
   margin: 0 10px 0;
 }
-/* line 478, ../sass/common.sass */
+/* line 481, ../sass/common.sass */
 #thanks-page .social-share p {
   color: white;
   margin-top: 15px;
   font-size: 18px;
 }
 
-/* line 486, ../sass/common.sass */
+/* line 489, ../sass/common.sass */
 #privacy .header {
   margin-bottom: 60px;
 }
-/* line 488, ../sass/common.sass */
+/* line 491, ../sass/common.sass */
 #privacy h1 {
   font-size: 48px;
   color: #de3b29;
   text-shadow: none;
 }
-/* line 492, ../sass/common.sass */
+/* line 495, ../sass/common.sass */
 #privacy h2 {
   color: #de3b29;
   font-weight: bold;
@@ -638,70 +630,69 @@ form {
 }
 
 @media (min-width: 1200px) {
-  /* line 504, ../sass/common.sass */
-  .form-header h1, .form-header p {
+  /* line 508, ../sass/common.sass */
+  .ll .form-header h1, .ll .form-header p {
     font-size: 21px;
   }
-  /* line 506, ../sass/common.sass */
-  .form-header h2 {
+  /* line 510, ../sass/common.sass */
+  .ll .form-header h2 {
     font-size: 56px;
   }
 }
 @media (max-width: 1200px) {
-  /* line 510, ../sass/common.sass */
+  /* line 514, ../sass/common.sass */
   .container {
     max-width: 100%;
   }
 
-  /* line 513, ../sass/common.sass */
-  .form-header h1, .form-header p {
+  /* line 518, ../sass/common.sass */
+  .ll .form-header h1, .ll .form-header p {
     font-size: 18px;
   }
-  /* line 515, ../sass/common.sass */
-  .form-header h2 {
+  /* line 520, ../sass/common.sass */
+  .ll .form-header h2 {
     font-size: 48px;
   }
-
-  /* line 519, ../sass/common.sass */
-  #home-page .form-header h1, #home-page .form-header p, #thanks-page .form-header h1, #thanks-page .form-header p {
+  /* line 523, ../sass/common.sass */
+  .ll .form-header.big-header h1, .ll .form-header.big-header p {
     font-size: 18px;
   }
-  /* line 521, ../sass/common.sass */
-  #home-page .form-header h2, #thanks-page .form-header h2 {
+  /* line 525, ../sass/common.sass */
+  .ll .form-header.big-header h2 {
     font-size: 48px;
   }
 }
 @media (min-width: 769px) {
-  /* line 525, ../sass/common.sass */
+  /* line 529, ../sass/common.sass */
   .body {
     margin: 30px 20px 60px;
   }
 
-  /* line 527, ../sass/common.sass */
+  /* line 531, ../sass/common.sass */
   .container > div {
     padding-left: 60px;
     padding-right: 60px;
   }
 
-  /* line 531, ../sass/common.sass */
-  .form-div input, .form-div select, .form-div .btn {
+  /* line 536, ../sass/common.sass */
+  .ll .form-div input, .ll .form-div select, .ll .form-div .btn {
     display: block;
     width: 60%;
     margin: 0 auto 15px;
   }
 
-  /* line 537, ../sass/common.sass */
-  #home-page .form-div.joined-button input, #home-page .form-div.joined-button .btn {
+  /* line 542, ../sass/common.sass */
+  #home-page .ll .form-div.joined-button input, #home-page .ll .form-div.joined-button .btn {
     display: inline;
     margin: 0;
   }
-  /* line 540, ../sass/common.sass */
-  #home-page .form-div.joined-button input {
-    width: 50%;
+  /* line 545, ../sass/common.sass */
+  #home-page .ll .form-div.joined-button input {
+    width: 50% !important;
     border-radius: 5px 0 0 5px;
   }
-  /* line 543, ../sass/common.sass */
-  #home-page .form-div.joined-button .btn {
+  /* line 548, ../sass/common.sass */
+  #home-page .ll .form-div.joined-button .btn {
     width: auto;
     border-radius: 0 5px 5px 0;
     position: relative;
@@ -710,102 +701,102 @@ form {
   }
 }
 @media (max-width: 768px) {
-  /* line 552, ../sass/common.sass */
+  /* line 557, ../sass/common.sass */
   .form-banner {
     background-size: 400px;
   }
 
-  /* line 554, ../sass/common.sass */
+  /* line 559, ../sass/common.sass */
   .form-container {
     margin-bottom: 180px;
   }
 
-  /* line 557, ../sass/common.sass */
+  /* line 562, ../sass/common.sass */
   .footer .disclosure {
     display: none;
   }
 
-  /* line 560, ../sass/common.sass */
+  /* line 565, ../sass/common.sass */
   .adsense-row {
     padding: 15px 0;
   }
 
-  /* line 563, ../sass/common.sass */
+  /* line 568, ../sass/common.sass */
   .header #mark {
     display: none;
   }
 
-  /* line 566, ../sass/common.sass */
+  /* line 571, ../sass/common.sass */
   #offers .progress-container {
     border-top: 1px solid #ddd;
     background: #f2f2f2;
     text-align: center;
     padding-bottom: 10px;
   }
-  /* line 571, ../sass/common.sass */
+  /* line 576, ../sass/common.sass */
   #offers .progress-container .progress-label {
     color: #de3b29;
   }
-  /* line 573, ../sass/common.sass */
+  /* line 578, ../sass/common.sass */
   #offers .progress-container .progress {
     border: 1px solid #ddd;
   }
-  /* line 575, ../sass/common.sass */
+  /* line 580, ../sass/common.sass */
   #offers .offer-header {
     text-align: center;
     padding: 5px 10px;
   }
-  /* line 578, ../sass/common.sass */
+  /* line 583, ../sass/common.sass */
   #offers .offer-header span {
     font-style: italic;
     font-size: 13px;
   }
-  /* line 582, ../sass/common.sass */
+  /* line 587, ../sass/common.sass */
   #offers .lexlaw img {
     max-width: 90%;
   }
 }
 @media (min-width: 699px) {
-  /* line 587, ../sass/common.sass */
+  /* line 592, ../sass/common.sass */
   .form {
     padding: 40px;
   }
 
-  /* line 591, ../sass/common.sass */
+  /* line 596, ../sass/common.sass */
   .radioSelectContainer > label {
     display: none;
   }
 
-  /* line 593, ../sass/common.sass */
+  /* line 598, ../sass/common.sass */
   .extendedRadioContainer {
     display: none;
   }
 
-  /* line 596, ../sass/common.sass */
+  /* line 601, ../sass/common.sass */
   .radioContainer label {
     margin-right: 10px;
     font-size: 16px;
   }
-  /* line 599, ../sass/common.sass */
+  /* line 604, ../sass/common.sass */
   .radioContainer label:last-child {
     margin-right: 0;
   }
-  /* line 601, ../sass/common.sass */
+  /* line 606, ../sass/common.sass */
   .radioContainer input {
     margin-right: 3px;
   }
 }
 @media (max-width: 699px) {
-  /* line 608, ../sass/common.sass */
+  /* line 613, ../sass/common.sass */
   .radioSelectContainer, .radioContainer {
     position: relative;
     overflow: hidden;
   }
-  /* line 612, ../sass/common.sass */
+  /* line 617, ../sass/common.sass */
   .radioSelectContainer select, .radioContainer select {
     display: none;
   }
-  /* line 614, ../sass/common.sass */
+  /* line 619, ../sass/common.sass */
   .radioSelectContainer label, .radioSelectContainer .labelContainer, .radioContainer label, .radioContainer .labelContainer {
     display: block;
     margin: 10px 0;
@@ -818,14 +809,14 @@ form {
     padding: 10px;
     cursor: pointer;
   }
-  /* line 625, ../sass/common.sass */
+  /* line 630, ../sass/common.sass */
   .radioSelectContainer label:hover, .radioSelectContainer .labelContainer:hover, .radioContainer label:hover, .radioContainer .labelContainer:hover {
     background: #dbdbdb;
     background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#dbdbdb));
     background: -moz-linear-gradient(top, #fcfcfc, #dbdbdb);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#dbdbdb');
   }
-  /* line 631, ../sass/common.sass */
+  /* line 636, ../sass/common.sass */
   .radioSelectContainer label > span, .radioSelectContainer .labelContainer > span, .radioContainer label > span, .radioContainer .labelContainer > span {
     text-align: left;
     display: block;
@@ -834,34 +825,34 @@ form {
     background: url("../images/right-arrow-gray.png") no-repeat right center;
     background-size: 8px 13px;
   }
-  /* line 638, ../sass/common.sass */
+  /* line 643, ../sass/common.sass */
   .radioSelectContainer label > input, .radioSelectContainer .labelContainer > input, .radioContainer label > input, .radioContainer .labelContainer > input {
     position: absolute;
     top: -20px;
   }
-  /* line 641, ../sass/common.sass */
+  /* line 646, ../sass/common.sass */
   .radioSelectContainer label > input:checked + span, .radioSelectContainer .labelContainer > input:checked + span, .radioContainer label > input:checked + span, .radioContainer .labelContainer > input:checked + span {
     background-color: #404040;
     color: #F7F7F7;
   }
-  /* line 644, ../sass/common.sass */
+  /* line 649, ../sass/common.sass */
   .radioSelectContainer label label, .radioSelectContainer .labelContainer label, .radioContainer label label, .radioContainer .labelContainer label {
     display: none;
   }
-  /* line 646, ../sass/common.sass */
+  /* line 651, ../sass/common.sass */
   .radioSelectContainer label.active, .radioSelectContainer .labelContainer.active, .radioContainer label.active, .radioContainer .labelContainer.active {
     background: #777;
     border: 2px solid #777;
     overflow: auto;
   }
-  /* line 651, ../sass/common.sass */
+  /* line 656, ../sass/common.sass */
   .radioSelectContainer label.active > span, .radioSelectContainer .labelContainer.active > span, .radioContainer label.active > span, .radioContainer .labelContainer.active > span {
     color: white;
     margin-bottom: 10px;
     background: url("../images/down-arrow-gray.png") no-repeat right center;
     background-size: 13px 8px;
   }
-  /* line 656, ../sass/common.sass */
+  /* line 661, ../sass/common.sass */
   .radioSelectContainer label.active label, .radioSelectContainer .labelContainer.active label, .radioContainer label.active label, .radioContainer .labelContainer.active label {
     display: block;
     width: 48%;
@@ -870,18 +861,18 @@ form {
   }
 }
 @media (max-width: 480px) {
-  /* line 665, ../sass/common.sass */
+  /* line 670, ../sass/common.sass */
   body {
     background: #c4c9d3;
   }
 
-  /* line 667, ../sass/common.sass */
+  /* line 672, ../sass/common.sass */
   .header {
     height: 60px;
     padding: 0px 20px;
     text-align: center;
   }
-  /* line 671, ../sass/common.sass */
+  /* line 676, ../sass/common.sass */
   .header .header-brand a {
     float: none;
     margin: auto;
@@ -890,147 +881,145 @@ form {
     background-size: 132px;
   }
 
-  /* line 677, ../sass/common.sass */
+  /* line 682, ../sass/common.sass */
   .form-banner {
     background-size: 360px;
     border-bottom: 5px solid #de3b29;
   }
 
-  /* line 681, ../sass/common.sass */
-  .form-header h1 {
-    font-size: 13px;
-    color: white;
-    text-shadow: 0 2px 0 #b42f1f;
-  }
   /* line 685, ../sass/common.sass */
-  .form-header h2 {
-    font-size: 36px;
-    color: white;
-    text-shadow: 0 2px 0 #b42f1f;
-  }
-  /* line 689, ../sass/common.sass */
-  .form-header p {
-    font-size: 14px;
-  }
-
-  /* line 694, ../sass/common.sass */
-  #home-page .form-header h1, #home-page .form-header p, #thanks-page .form-header h1, #thanks-page .form-header p {
-    font-size: 14px;
-  }
-  /* line 696, ../sass/common.sass */
-  #home-page .form-header h2, #thanks-page .form-header h2 {
-    font-size: 48px;
-  }
-
-  /* line 698, ../sass/common.sass */
   .form-container {
     background: none;
     padding: 0;
     margin-bottom: 100px;
   }
 
-  /* line 703, ../sass/common.sass */
-  form input, form select {
+  /* line 691, ../sass/common.sass */
+  .ll .form-header h1 {
+    font-size: 13px;
+    color: white;
+    text-shadow: 0 2px 0 #b42f1f;
+  }
+  /* line 695, ../sass/common.sass */
+  .ll .form-header h2 {
+    font-size: 36px;
+    color: white;
+    text-shadow: 0 2px 0 #b42f1f;
+  }
+  /* line 699, ../sass/common.sass */
+  .ll .form-header p {
+    font-size: 14px;
+  }
+  /* line 702, ../sass/common.sass */
+  .ll .form-header.big-header h1, .ll .form-header.big-header p {
+    font-size: 14px;
+  }
+  /* line 704, ../sass/common.sass */
+  .ll .form-header.big-header h2 {
+    font-size: 48px;
+  }
+  /* line 706, ../sass/common.sass */
+  .ll input.form-control, .ll select.form-control {
     display: block;
     text-align: center;
-    width: 80%;
+    width: 80% !important;
     margin: 0 auto 15px;
   }
-  /* line 708, ../sass/common.sass */
-  form .btn {
+  /* line 711, ../sass/common.sass */
+  .ll .btn {
     width: 80%;
   }
 
-  /* line 710, ../sass/common.sass */
+  /* line 713, ../sass/common.sass */
   .body, .adsense-row {
     display: none;
   }
 
-  /* line 712, ../sass/common.sass */
+  /* line 715, ../sass/common.sass */
   .footer {
     padding: 20px 0;
     background: #c4c9d3;
   }
-  /* line 715, ../sass/common.sass */
+  /* line 718, ../sass/common.sass */
   .footer p {
     color: #666;
     font-size: 11px;
     line-height: 14px;
   }
 
-  /* line 720, ../sass/common.sass */
+  /* line 723, ../sass/common.sass */
   #home-page form {
     padding-top: 20px;
   }
-  /* line 722, ../sass/common.sass */
+  /* line 725, ../sass/common.sass */
   #home-page form .arrow {
     display: none;
   }
 
-  /* line 724, ../sass/common.sass */
+  /* line 727, ../sass/common.sass */
   body#offer-page {
     background: white;
   }
-  /* line 726, ../sass/common.sass */
+  /* line 729, ../sass/common.sass */
   body#offer-page .header {
     height: auto;
   }
-  /* line 728, ../sass/common.sass */
+  /* line 731, ../sass/common.sass */
   body#offer-page .header .header-brand a {
     margin-top: 0px;
     background-image: url("../images/santa-jackpot-logo.png");
   }
-  /* line 731, ../sass/common.sass */
+  /* line 734, ../sass/common.sass */
   body#offer-page .header .survey-header {
     padding-top: 0px;
   }
-  /* line 733, ../sass/common.sass */
+  /* line 736, ../sass/common.sass */
   body#offer-page .header .progress-bubbles {
     display: none;
   }
-  /* line 735, ../sass/common.sass */
+  /* line 738, ../sass/common.sass */
   body#offer-page .form-container {
     padding-top: 30px;
     margin-bottom: 160px;
   }
-  /* line 738, ../sass/common.sass */
+  /* line 741, ../sass/common.sass */
   body#offer-page .footer {
     background: none;
   }
 
-  /* line 741, ../sass/common.sass */
+  /* line 744, ../sass/common.sass */
   #thanks-page .form-banner {
     background-size: 460px;
     border-bottom: none;
     margin-bottom: 0px;
   }
-  /* line 745, ../sass/common.sass */
+  /* line 748, ../sass/common.sass */
   #thanks-page .form-container {
     padding-top: 20px;
     margin-bottom: 220px;
   }
-  /* line 748, ../sass/common.sass */
+  /* line 751, ../sass/common.sass */
   #thanks-page .social-share {
     padding-top: 20px;
   }
-  /* line 750, ../sass/common.sass */
+  /* line 753, ../sass/common.sass */
   #thanks-page .social-share .hashtag {
     display: none;
   }
-  /* line 753, ../sass/common.sass */
+  /* line 756, ../sass/common.sass */
   #thanks-page .form-header h1, #thanks-page .form-header h2 {
     text-shadow: none;
   }
-  /* line 755, ../sass/common.sass */
+  /* line 758, ../sass/common.sass */
   #thanks-page .footer {
     background: white;
   }
 
-  /* line 758, ../sass/common.sass */
+  /* line 761, ../sass/common.sass */
   #privacy h1 {
     font-size: 32px;
   }
-  /* line 760, ../sass/common.sass */
+  /* line 763, ../sass/common.sass */
   #privacy h2 {
     font-size: 21px;
   }

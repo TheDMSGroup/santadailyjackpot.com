@@ -79,7 +79,7 @@ a
 
 h1
   font-size: 36px
-  font-weight: 600
+  font-weight: 600 !important
   margin-bottom: 10px
 
 h2
@@ -124,64 +124,6 @@ select, input[type="text"]
       content: ""
       clear: both
       display: block
-
-.btn
-  font-size: 18px
-  font-weight: 600
-  color: black
-  padding: 10px 30px
-  background: $secondary
-  background-image: linear-gradient(top, $secondary-lt, $secondary, $secondary, $secondary-dk)
-  background-image: -webkit-gradient(linear, top, color-stop(0%,$secondary-lt), color-stop(25%,$secondary), color-stop(50%,$secondary), color-stop(100%,$secondary-dk))
-  background: -moz-linear-gradient(top, $secondary-lt, $secondary, $secondary, $secondary-dk)
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$secondary}', endColorstr='#{$secondary-dk}')
-  border-radius: 5px
-  border: 1px solid $secondary-dk
-  white-space: normal
-  cursor: pointer
-  text-shadow: rgba(255,255,255,0.2) 0 1px 0
-  &:hover
-    background: $secondary-md
-    background-image: linear-gradient(top, $secondary-lt, $secondary, $secondary-dk, $secondary-dk)
-    background-image: -webkit-gradient(linear, top, color-stop(0%,$secondary-lt), color-stop(25%,$secondary), color-stop(50%,$secondary), color-stop(100%,$secondary-dk))
-    background: -moz-linear-gradient(top, $secondary-lt, $secondary, $secondary, $secondary-dk)
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$secondary}', endColorstr='#{$secondary-dk}')
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$secondary-lt}', endColorstr='#{$secondary-md}')
-    text-shadow: rgba(255,255,255,0.6) 0 1px 0
-    top: 1px
-    position: relative
-
-  &.btn-sm
-    font-size: 16px
-    text-transform: capitalize
-    font-weight: normal
-    box-shadow: none
-    letter-spacing: 0
-  &.next
-    &:after
-      content: "\203A"
-      padding-left: 5px
-
-.no-btn
-  color: rgba(255,255,255,0.9)
-  background: rgba(0,0,0,0.2)
-  padding: 8px 20px
-  font-style: italic
-  border-radius: 5px
-  &:hover
-    color: white
-    background: rgba(0,0,0,0.4)
-    text-decoration: none
-.btn-link
-  display: block
-  &.previous
-    margin: 30px auto 10px
-    &:before
-      content: "\2039"
-      padding-right: 5px
-  &:hover
-    color: white
-    text-decoration: none
 
 select:-moz-focusring
   outline: none
@@ -286,40 +228,137 @@ select:-moz-focusring
     text-align: center
 
 // animated arrow
-form
+form, .formio-component-fieldset.form-div
   position: relative
   padding-top: 50px
 
-.arrow
-  display: block
-  position: absolute
-  border-left: 15px solid transparent
-  border-right: 15px solid transparent
-  border-top: 15px solid $gold
-  top: 15px
-  left: 50%
-  margin-left: -15px
-  z-index: 2
-  animation: float 1.5s ease-in-out infinite
-
-.animated
-  animation-duration: 2s
-  animation-fill-mode: both
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-@keyframes bounce
-  0%, 100%
-    transform: translateY(0)
-
-  50%
-    transform: translateY(-10px)
-
-.bounce
-  animation-name: bounce
-
 
 //////////////////////////////////////  INDIVIDUAL PAGE STYLES  ///////////////////////////////////////
+
+
+// ll form overrides
+.ll
+  .form-header
+    text-align: center
+    h1, h2, p
+      color: $red
+      @extend .uppercase
+      margin: 5px 0
+    h1
+      font-size: 14px
+    h2
+      font-size: 38px
+      font-weight: 800
+    p
+      font-size: 21px
+      font-weight: 600
+
+  .form-header.big-header
+    h1
+      font-size: 21px
+    h2
+      font-size: 72px
+
+  // arrow
+  .arrow
+    display: block
+    position: absolute !important
+    border-left: 15px solid transparent
+    border-right: 15px solid transparent
+    border-top: 15px solid $gold
+    top: 15px
+    left: 50%
+    margin-left: -15px
+    z-index: 2
+    animation: float 1.5s ease-in-out infinite
+  .animated
+    animation-duration: 2s
+    animation-fill-mode: both
+    animation-timing-function: ease-in-out
+    animation-iteration-count: infinite
+  @keyframes bounce
+    0%, 100%
+      transform: translateY(0)
+    50%
+      transform: translateY(-10px)
+  .bounce
+    animation-name: bounce
+
+  // buttons
+  .btn, .btn-primary.btn-gold, div.radio span
+    font-size: 18px
+    font-weight: 600
+    color: black
+    padding: 10px 30px
+    background: $secondary
+    background-image: linear-gradient(top, $secondary-lt, $secondary, $secondary, $secondary-dk)
+    background-image: -webkit-gradient(linear, top, color-stop(0%,$secondary-lt), color-stop(25%,$secondary), color-stop(50%,$secondary), color-stop(100%,$secondary-dk))
+    background: -moz-linear-gradient(top, $secondary-lt, $secondary, $secondary, $secondary-dk)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$secondary}', endColorstr='#{$secondary-dk}')
+    border-radius: 5px
+    border: 1px solid $secondary-dk
+    white-space: normal
+    cursor: pointer
+    text-shadow: rgba(255,255,255,0.2) 0 1px 0
+    &:hover
+      border: 1px solid $secondary-dk
+      color: black
+      background: $secondary-md
+      background-image: linear-gradient(top, $secondary-lt, $secondary, $secondary-dk, $secondary-dk)
+      background-image: -webkit-gradient(linear, top, color-stop(0%,$secondary-lt), color-stop(25%,$secondary), color-stop(50%,$secondary), color-stop(100%,$secondary-dk))
+      background: -moz-linear-gradient(top, $secondary-lt, $secondary, $secondary, $secondary-dk)
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$secondary}', endColorstr='#{$secondary-dk}')
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$secondary-lt}', endColorstr='#{$secondary-md}')
+      text-shadow: rgba(255,255,255,0.6) 0 1px 0
+      top: 1px
+      position: relative
+
+  .form-div
+    text-align: center
+    input[type="text"], input[type="email"]
+      height: 47px
+  .form-note
+    color: #999
+    font-style: italic
+    font-size: 12px
+    margin-top: 10px
+
+  // weird overrides
+  .form-div .form-control
+    width: 60%
+
+  .control-label div
+    text-align: left
+    font-weight: lighter
+    font-size: 12px
+
+  .formio-component-email
+    display: inline
+    .form-control
+      height: 47px
+  .list-inline
+    display: none
+
+// offers form
+#offer-page .ll
+  .control-label
+    color: $red
+    font-size: 28px
+    font-weight: 600
+    margin-bottom: 30px
+  .input-group
+    width: 80%
+    margin: auto
+    text-align: center
+  div.radio
+    display: inline
+    span, input
+      display: inline-block
+      min-width: 100px
+    input[type="radio"]
+      opacity: 0.01
+      z-index: 100
+
 
 // forms
 .form-banner
@@ -333,42 +372,6 @@ form
   background: white
   border-radius: 5px
   padding: 30px 40px
-
-.form-header
-  text-align: center
-  h1, h2, p
-    color: $red
-    @extend .uppercase
-    margin: 5px 0
-  h1
-    font-size: 14px
-  h2
-    font-size: 38px
-    font-weight: 800
-  p
-    font-size: 21px
-    font-weight: 600
-
-#home-page, #thanks-page
-  .form-header
-    h1
-      font-size: 21px
-    h2
-      font-size: 72px
-
-.form-div
-  text-align: center
-  input
-    height: 47px
-.form-note
-  color: #999
-  font-style: italic
-  font-size: 12px
-  margin-top: 10px
-
-.alert
-  padding: 5px 10px
-  border: none
 
 // offers
 #offer-page
@@ -455,7 +458,7 @@ form
 #thanks-page
   .header
     background: #bac0ce
-  .form-header
+  .form-header.big-header
     h1
       color: black
     h2
@@ -500,22 +503,23 @@ form
 //////////////////////////////////////  MEDIA QUERIES  ///////////////////////////////////////
 
 @media (min-width: 1200px)
-  .form-header
-    h1, p
-      font-size: 21px
-    h2
-      font-size: 56px
+  .ll
+    .form-header
+      h1, p
+        font-size: 21px
+      h2
+        font-size: 56px
 
 @media (max-width: 1200px)
   .container
     max-width: 100%
-  .form-header
-    h1, p
-      font-size: 18px
-    h2
-      font-size: 48px
-  #home-page, #thanks-page
+  .ll
     .form-header
+      h1, p
+        font-size: 18px
+      h2
+        font-size: 48px
+    .form-header.big-header
       h1, p
         font-size: 18px
       h2
@@ -527,18 +531,19 @@ form
   .container > div
     padding-left: 60px
     padding-right: 60px
-  .form-div
-    input, select, .btn
-      display: block
-      width: 60%
-      margin: 0 auto 15px
+  .ll
+    .form-div
+      input, select, .btn
+        display: block
+        width: 60%
+        margin: 0 auto 15px
   #home-page
-    .form-div.joined-button
+    .ll .form-div.joined-button
       input, .btn
         display: inline
         margin: 0
       input
-        width: 50%
+        width: 50% !important
         border-radius: 5px 0 0 5px
       .btn
         width: auto
@@ -677,33 +682,31 @@ form
   .form-banner
     background-size: 360px
     border-bottom: 5px solid $red
-  .form-header
-    h1
-      font-size: 13px
-      color: white
-      text-shadow: 0 2px 0 $red-dk
-    h2
-      font-size: 36px
-      color: white
-      text-shadow: 0 2px 0 $red-dk
-    p
-      font-size: 14px
-
-  #home-page, #thanks-page
-    .form-header
-      h1, p
-        font-size: 14px
-      h2
-        font-size: 48px
   .form-container
     background: none
     padding: 0
     margin-bottom: 100px
-  form
-    input, select
+  .ll
+    .form-header
+      h1
+        font-size: 13px
+        color: white
+        text-shadow: 0 2px 0 $red-dk
+      h2
+        font-size: 36px
+        color: white
+        text-shadow: 0 2px 0 $red-dk
+      p
+        font-size: 14px
+    .form-header.big-header
+      h1, p
+        font-size: 14px
+      h2
+        font-size: 48px
+    input.form-control, select.form-control
       display: block
       text-align: center
-      width: 80%
+      width: 80% !important
       margin: 0 auto 15px
     .btn
       width: 80%
