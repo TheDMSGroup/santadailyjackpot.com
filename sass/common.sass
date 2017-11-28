@@ -93,7 +93,7 @@ h3
   margin-bottom: 10px
 
 h4
-  font-weight: 600
+  font-weight: normal
   font-size: 16px
 
 select, input[type="text"]
@@ -197,26 +197,6 @@ select:-moz-focusring
       font-size: 28px
       position: relative
       top: 4px
-.adsense-row
-  padding: 15px
-  text-align: center
-  margin-left: 0
-  margin-right: 0
-  .adsense
-    display: block
-    margin: auto
-    background: #ddd
-    width: 728px
-    height: 90px
-    text-align: center
-    max-width: 100%
-    span
-      display: block
-      font-size: 24px
-      color: #999
-      position: relative
-      top: 50%
-      transform: translateY(-50%)
 
 .footer
   clear: both
@@ -238,6 +218,21 @@ form, .formio-component-fieldset.form-div
 
 // ll form overrides
 .ll
+  .panel.panel-default
+    border: none
+    border-radius: 0
+    box-shadow: none
+    margin: 0
+    padding: 0
+    .panel-body
+      padding: 0
+  .well.formio-component
+    background: none
+    border-radius: 0
+    padding: 0
+    margin: 0
+    border: none
+    box-shadow: none
   .form-header
     text-align: center
     h1, h2, p
@@ -249,6 +244,8 @@ form, .formio-component-fieldset.form-div
     h2
       font-size: 38px
       font-weight: 800
+    h4
+      font-weight: lighter
     p
       font-size: 21px
       font-weight: 600
@@ -312,7 +309,9 @@ form, .formio-component-fieldset.form-div
       text-shadow: rgba(255,255,255,0.6) 0 1px 0
       top: 1px
       position: relative
-
+  .btn-primary.btn-gold
+    display: block
+    margin: auto
   .form-div
     text-align: center
     input[type="text"], input[type="email"]
@@ -327,10 +326,14 @@ form, .formio-component-fieldset.form-div
   .form-div .form-control
     width: 60%
 
+  .checkbox input[type="checkbox"]
+    left: 40px
+
   .control-label div
     text-align: left
     font-weight: lighter
     font-size: 12px
+    text-indent: 20px
 
   .formio-component-email
     display: inline
@@ -340,25 +343,46 @@ form, .formio-component-fieldset.form-div
     display: none
 
 // offers form
-#offer-page .ll
-  .control-label
+.form-container .ll
+  .progress
+    height: 8px
+    margin-bottom: 0px
+    .progress-bar
+      background: $green
+  .form-group > .control-label
     color: $red
-    font-size: 28px
+    font-size: 21px
     font-weight: 600
-    margin-bottom: 30px
+    margin-bottom: 20px
+    text-align: center
+    display: block
+  .form-group.formio-component-checkbox > .control-label
+    color: #666
+    font-weight: lighter
   .input-group
-    width: 80%
+    width: 90%
     margin: auto
     text-align: center
   div.radio
-    display: inline
-    span, input
+    display: inline-block
+    position: relative
+    margin: 15px 2.5%
+    text-align: center
+    height: 47px
+    width: 40%
+    label, input
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 47px
+    span
       display: inline-block
-      min-width: 100px
+      width: 100%
+      margin: 0
     input[type="radio"]
       opacity: 0.01
       z-index: 100
-
 
 // forms
 .form-banner
@@ -372,87 +396,6 @@ form, .formio-component-fieldset.form-div
   background: white
   border-radius: 5px
   padding: 30px 40px
-
-// offers
-#offer-page
-  .offer
-    position: relative
-    overflow: auto
-    &:before
-      top: 0
-      left: 50%
-      border: solid transparent
-      content: " "
-      height: 0
-      width: 0
-      position: absolute
-      pointer-events: none
-      border-top-color: $midnight
-      border-width: 15px
-      margin-left: -15px
-  .header-brand a
-    background-image: url('../images/santa-jackpot-logo-white.png')
-    margin-top: 10px
-  .survey-header
-    padding-top: 10px
-    .progress-bubbles
-      margin-bottom: 10px
-      .progress
-        background: #8c8f95
-        display: inline-block
-        width: 120px
-        margin: 0 -4px
-        height: 8px
-        border-radius: 0
-        position: relative
-        top: -2px
-        .progress-bar
-          background: $green
-    .bubble
-      background: #8c8f95
-      z-index: 3px
-      height: 30px
-      width: 30px
-      border-radius: 15px
-      font-weight: 600
-      font-size: 18px
-      text-align: center
-      display: inline-block
-      line-height: 30px
-      &.active
-        background: $green
-    p
-      color: white
-  .form-container
-    padding-top: 50px
-    text-align: center
-    margin-bottom: 60px
-    .progress
-      height: 8px
-      .progress-bar
-        background: $green
-  h1
-    color: $red
-    font-size: 28px
-    font-weight: normal
-    margin-bottom: 30px
-
-  // carousel
-  .carousel-indicators
-    position: unset
-    margin: 30px auto 20px
-    li
-      border: 1px solid #ddd
-    .active
-      background: #ddd
-
-  label.section_label
-    color: $primary
-    text-align: center
-    font-size: 18px
-    display: block
-  label.consent
-    font-weight: normal
 
 // thanks
 #thanks-page
@@ -537,8 +480,7 @@ form, .formio-component-fieldset.form-div
         display: block
         width: 60%
         margin: 0 auto 15px
-  #home-page
-    .ll .form-div.joined-button
+    .form-div.joined-button
       input, .btn
         display: inline
         margin: 0
@@ -561,9 +503,6 @@ form, .formio-component-fieldset.form-div
   .footer
     .disclosure
       display: none
-  //adsense
-  .adsense-row
-    padding: 15px 0
   .header
     #mark
       display: none
@@ -696,6 +635,8 @@ form, .formio-component-fieldset.form-div
         font-size: 36px
         color: white
         text-shadow: 0 2px 0 $red-dk
+      h4
+        color: $red
       p
         font-size: 14px
     .form-header.big-header
@@ -710,7 +651,26 @@ form, .formio-component-fieldset.form-div
       margin: 0 auto 15px
     .btn
       width: 80%
-  .body, .adsense-row
+
+  .form-container .ll
+    .form-group > .control-label
+      color: white
+    .form-group.formio-component-checkbox > .control-label
+      color: white
+    .input-group
+      width: 90%
+      margin: auto
+      text-align: center
+    div.radio
+      display: block
+      width: 100%
+      margin: 15px 0
+      span
+        display: inline-block
+        width: 80%
+        height: 47px
+
+  .body
     display: none
   .footer
     padding: 20px 0
@@ -719,11 +679,6 @@ form, .formio-component-fieldset.form-div
       color: #666
       font-size: 11px
       line-height: 14px
-  #home-page
-    form
-      padding-top: 20px
-      .arrow
-        display: none
   body#offer-page
     background: white
     .header
