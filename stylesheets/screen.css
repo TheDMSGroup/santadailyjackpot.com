@@ -248,7 +248,7 @@ form, .formio-component-fieldset.form-div {
   padding-top: 50px;
 }
 
-/* line 221, ../sass/common.sass */
+/* line 227, ../sass/common.sass */
 .ll .panel.panel-default {
   border: none;
   border-radius: 0;
@@ -256,11 +256,11 @@ form, .formio-component-fieldset.form-div {
   margin: 0;
   padding: 0;
 }
-/* line 227, ../sass/common.sass */
+/* line 233, ../sass/common.sass */
 .ll .panel.panel-default .panel-body {
   padding: 0;
 }
-/* line 229, ../sass/common.sass */
+/* line 235, ../sass/common.sass */
 .ll .well.formio-component {
   background: none;
   border-radius: 0;
@@ -269,42 +269,42 @@ form, .formio-component-fieldset.form-div {
   border: none;
   box-shadow: none;
 }
-/* line 236, ../sass/common.sass */
+/* line 242, ../sass/common.sass */
 .ll .form-header {
   text-align: center;
 }
-/* line 238, ../sass/common.sass */
+/* line 244, ../sass/common.sass */
 .ll .form-header h1, .ll .form-header h2, .ll .form-header p {
   color: #de3b29;
   margin: 5px 0;
 }
-/* line 242, ../sass/common.sass */
+/* line 248, ../sass/common.sass */
 .ll .form-header h1 {
   font-size: 14px;
 }
-/* line 244, ../sass/common.sass */
+/* line 250, ../sass/common.sass */
 .ll .form-header h2 {
   font-size: 38px;
   font-weight: 800;
 }
-/* line 247, ../sass/common.sass */
+/* line 253, ../sass/common.sass */
 .ll .form-header h4 {
   font-weight: lighter;
 }
-/* line 249, ../sass/common.sass */
+/* line 255, ../sass/common.sass */
 .ll .form-header p {
   font-size: 21px;
   font-weight: 600;
 }
-/* line 254, ../sass/common.sass */
+/* line 260, ../sass/common.sass */
 .ll .form-header.big-header h1 {
   font-size: 21px;
 }
-/* line 256, ../sass/common.sass */
+/* line 262, ../sass/common.sass */
 .ll .form-header.big-header h2 {
   font-size: 72px;
 }
-/* line 260, ../sass/common.sass */
+/* line 266, ../sass/common.sass */
 .ll .arrow {
   display: block;
   position: absolute !important;
@@ -317,7 +317,7 @@ form, .formio-component-fieldset.form-div {
   z-index: 2;
   animation: float 1.5s ease-in-out infinite;
 }
-/* line 271, ../sass/common.sass */
+/* line 277, ../sass/common.sass */
 .ll .animated {
   animation-duration: 2s;
   animation-fill-mode: both;
@@ -332,11 +332,11 @@ form, .formio-component-fieldset.form-div {
     transform: translateY(-10px);
   }
 }
-/* line 281, ../sass/common.sass */
+/* line 287, ../sass/common.sass */
 .ll .bounce {
   animation-name: bounce;
 }
-/* line 285, ../sass/common.sass */
+/* line 291, ../sass/common.sass */
 .ll .btn, .ll .btn-primary.btn-gold, .ll div.radio span {
   font-size: 18px;
   font-weight: 600;
@@ -353,7 +353,7 @@ form, .formio-component-fieldset.form-div {
   cursor: pointer;
   text-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
 }
-/* line 300, ../sass/common.sass */
+/* line 306, ../sass/common.sass */
 .ll .btn:hover, .ll .btn-primary.btn-gold:hover, .ll div.radio span:hover {
   border: 1px solid #ed8e19;
   color: black;
@@ -367,64 +367,64 @@ form, .formio-component-fieldset.form-div {
   top: 1px;
   position: relative;
 }
-/* line 312, ../sass/common.sass */
+/* line 318, ../sass/common.sass */
 .ll .btn-primary.btn-gold {
   display: block;
   margin: auto;
 }
-/* line 315, ../sass/common.sass */
+/* line 321, ../sass/common.sass */
 .ll .form-div {
   text-align: center;
 }
-/* line 317, ../sass/common.sass */
+/* line 323, ../sass/common.sass */
 .ll .form-div input[type="text"], .ll .form-div input[type="email"] {
   height: 47px;
 }
-/* line 319, ../sass/common.sass */
+/* line 325, ../sass/common.sass */
 .ll .form-note {
   color: #999;
   font-style: italic;
   font-size: 12px;
   margin-top: 10px;
 }
-/* line 326, ../sass/common.sass */
+/* line 332, ../sass/common.sass */
 .ll .form-div .form-control {
   width: 60%;
 }
-/* line 329, ../sass/common.sass */
+/* line 335, ../sass/common.sass */
 .ll .checkbox input[type="checkbox"] {
   left: 40px;
 }
-/* line 332, ../sass/common.sass */
+/* line 338, ../sass/common.sass */
 .ll .control-label div {
   text-align: left;
   font-weight: lighter;
   font-size: 12px;
   text-indent: 20px;
 }
-/* line 338, ../sass/common.sass */
+/* line 344, ../sass/common.sass */
 .ll .formio-component-email {
   display: inline;
 }
-/* line 340, ../sass/common.sass */
+/* line 346, ../sass/common.sass */
 .ll .formio-component-email .form-control {
   height: 47px;
 }
-/* line 342, ../sass/common.sass */
+/* line 348, ../sass/common.sass */
 .ll .list-inline {
   display: none;
 }
 
-/* line 347, ../sass/common.sass */
+/* line 353, ../sass/common.sass */
 .form-container .ll .progress {
   height: 8px;
   margin-bottom: 0px;
 }
-/* line 350, ../sass/common.sass */
+/* line 356, ../sass/common.sass */
 .form-container .ll .progress .progress-bar {
   background: #36c86d;
 }
-/* line 352, ../sass/common.sass */
+/* line 358, ../sass/common.sass */
 .form-container .ll .form-group > .control-label {
   color: #de3b29;
   font-size: 21px;
@@ -433,27 +433,28 @@ form, .formio-component-fieldset.form-div {
   text-align: center;
   display: block;
 }
-/* line 359, ../sass/common.sass */
+/* line 365, ../sass/common.sass */
 .form-container .ll .form-group.formio-component-checkbox > .control-label {
   color: #666;
   font-weight: lighter;
 }
-/* line 362, ../sass/common.sass */
+/* line 368, ../sass/common.sass */
 .form-container .ll .input-group {
   width: 90%;
   margin: auto;
   text-align: center;
 }
-/* line 366, ../sass/common.sass */
+/* line 372, ../sass/common.sass */
 .form-container .ll div.radio {
   display: inline-block;
   position: relative;
-  margin: 15px 2.5%;
+  margin: 10px 2.5%;
   text-align: center;
-  height: 47px;
+  min-height: 47px;
   width: 40%;
+  min-width: 224px;
 }
-/* line 373, ../sass/common.sass */
+/* line 380, ../sass/common.sass */
 .form-container .ll div.radio label, .form-container .ll div.radio input {
   position: absolute;
   top: 0;
@@ -461,19 +462,19 @@ form, .formio-component-fieldset.form-div {
   width: 100%;
   height: 47px;
 }
-/* line 379, ../sass/common.sass */
+/* line 386, ../sass/common.sass */
 .form-container .ll div.radio span {
   display: inline-block;
   width: 100%;
   margin: 0;
 }
-/* line 383, ../sass/common.sass */
+/* line 390, ../sass/common.sass */
 .form-container .ll div.radio input[type="radio"] {
   opacity: 0.01;
   z-index: 100;
 }
 
-/* line 388, ../sass/common.sass */
+/* line 395, ../sass/common.sass */
 .form-banner {
   background: #181e2b url("../images/santa-bg.jpg") left bottom no-repeat;
   background-size: 800px;
@@ -482,68 +483,68 @@ form, .formio-component-fieldset.form-div {
   margin-top: -1px;
 }
 
-/* line 395, ../sass/common.sass */
+/* line 402, ../sass/common.sass */
 .form-container {
   background: white;
   border-radius: 5px;
   padding: 30px 40px;
 }
 
-/* line 402, ../sass/common.sass */
+/* line 409, ../sass/common.sass */
 #thanks-page .header {
   background: #bac0ce;
 }
-/* line 405, ../sass/common.sass */
+/* line 412, ../sass/common.sass */
 #thanks-page .form-header.big-header h1 {
   color: black;
 }
-/* line 407, ../sass/common.sass */
+/* line 414, ../sass/common.sass */
 #thanks-page .form-header.big-header h2 {
   color: white;
 }
-/* line 409, ../sass/common.sass */
+/* line 416, ../sass/common.sass */
 #thanks-page .form-container {
   background: none;
   padding-top: 50px;
 }
-/* line 412, ../sass/common.sass */
+/* line 419, ../sass/common.sass */
 #thanks-page .form-banner {
   background: #bac0ce url("../images/santa-bg-light.jpg") bottom right no-repeat;
   border-bottom: 10px solid #b42f1f;
   margin-bottom: 30px;
 }
-/* line 416, ../sass/common.sass */
+/* line 423, ../sass/common.sass */
 #thanks-page .social-share {
   text-align: center;
   padding: 40px 0 0;
 }
-/* line 419, ../sass/common.sass */
+/* line 426, ../sass/common.sass */
 #thanks-page .social-share a:hover {
   position: relative;
   top: 1px;
 }
-/* line 422, ../sass/common.sass */
+/* line 429, ../sass/common.sass */
 #thanks-page .social-share img {
   margin: 0 10px 0;
 }
-/* line 424, ../sass/common.sass */
+/* line 431, ../sass/common.sass */
 #thanks-page .social-share p {
   color: white;
   margin-top: 15px;
   font-size: 18px;
 }
 
-/* line 432, ../sass/common.sass */
+/* line 439, ../sass/common.sass */
 #privacy .header {
   margin-bottom: 60px;
 }
-/* line 434, ../sass/common.sass */
+/* line 441, ../sass/common.sass */
 #privacy h1 {
   font-size: 48px;
   color: #de3b29;
   text-shadow: none;
 }
-/* line 438, ../sass/common.sass */
+/* line 445, ../sass/common.sass */
 #privacy h2 {
   color: #de3b29;
   font-weight: bold;
@@ -554,67 +555,148 @@ form, .formio-component-fieldset.form-div {
 }
 
 @media (min-width: 1200px) {
-  /* line 451, ../sass/common.sass */
+  /* line 458, ../sass/common.sass */
   .ll .form-header h1, .ll .form-header p {
     font-size: 21px;
   }
-  /* line 453, ../sass/common.sass */
+  /* line 460, ../sass/common.sass */
   .ll .form-header h2 {
     font-size: 56px;
   }
 }
 @media (max-width: 1200px) {
-  /* line 457, ../sass/common.sass */
+  /* line 464, ../sass/common.sass */
   .container {
     max-width: 100%;
   }
 
-  /* line 461, ../sass/common.sass */
+  /* line 468, ../sass/common.sass */
   .ll .form-header h1, .ll .form-header p {
     font-size: 18px;
   }
-  /* line 463, ../sass/common.sass */
+  /* line 470, ../sass/common.sass */
   .ll .form-header h2 {
     font-size: 48px;
   }
-  /* line 466, ../sass/common.sass */
+  /* line 473, ../sass/common.sass */
   .ll .form-header.big-header h1, .ll .form-header.big-header p {
     font-size: 18px;
   }
-  /* line 468, ../sass/common.sass */
+  /* line 475, ../sass/common.sass */
   .ll .form-header.big-header h2 {
     font-size: 48px;
   }
 }
-@media (min-width: 769px) {
-  /* line 472, ../sass/common.sass */
+@media (min-width: 992px) {
+  /* line 481, ../sass/common.sass */
   .body {
     margin: 30px 20px 60px;
   }
 
-  /* line 474, ../sass/common.sass */
+  /* line 483, ../sass/common.sass */
   .container > div {
     padding-left: 60px;
     padding-right: 60px;
   }
+}
+@media (max-width: 991px) {
+  /* line 489, ../sass/common.sass */
+  .form-banner {
+    background-size: 400px;
+  }
 
-  /* line 479, ../sass/common.sass */
+  /* line 491, ../sass/common.sass */
+  .form-container {
+    margin-bottom: 180px;
+  }
+
+  /* line 494, ../sass/common.sass */
+  .footer .disclosure {
+    display: none;
+  }
+
+  /* line 497, ../sass/common.sass */
+  .header #mark {
+    display: none;
+  }
+
+  /* line 500, ../sass/common.sass */
+  #offers .progress-container {
+    border-top: 1px solid #ddd;
+    background: #f2f2f2;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  /* line 505, ../sass/common.sass */
+  #offers .progress-container .progress-label {
+    color: #de3b29;
+  }
+  /* line 507, ../sass/common.sass */
+  #offers .progress-container .progress {
+    border: 1px solid #ddd;
+  }
+  /* line 509, ../sass/common.sass */
+  #offers .offer-header {
+    text-align: center;
+    padding: 5px 10px;
+  }
+  /* line 512, ../sass/common.sass */
+  #offers .offer-header span {
+    font-style: italic;
+    font-size: 13px;
+  }
+  /* line 516, ../sass/common.sass */
+  #offers .lexlaw img {
+    max-width: 90%;
+  }
+}
+@media (min-width: 481px) {
+  /* line 521, ../sass/common.sass */
+  .form {
+    padding: 40px;
+  }
+
+  /* line 525, ../sass/common.sass */
+  .radioSelectContainer > label {
+    display: none;
+  }
+
+  /* line 527, ../sass/common.sass */
+  .extendedRadioContainer {
+    display: none;
+  }
+
+  /* line 530, ../sass/common.sass */
+  .radioContainer label {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  /* line 533, ../sass/common.sass */
+  .radioContainer label:last-child {
+    margin-right: 0;
+  }
+  /* line 535, ../sass/common.sass */
+  .radioContainer input {
+    margin-right: 3px;
+  }
+
+  /* line 539, ../sass/common.sass */
   .ll .form-div input, .ll .form-div select, .ll .form-div .btn {
     display: block;
     width: 60%;
     margin: 0 auto 15px;
   }
-  /* line 484, ../sass/common.sass */
+  /* line 544, ../sass/common.sass */
   .ll .form-div.joined-button input, .ll .form-div.joined-button .btn {
     display: inline;
     margin: 0;
   }
-  /* line 487, ../sass/common.sass */
+  /* line 547, ../sass/common.sass */
   .ll .form-div.joined-button input {
     width: 50% !important;
     border-radius: 5px 0 0 5px;
   }
-  /* line 490, ../sass/common.sass */
+  /* line 550, ../sass/common.sass */
   .ll .form-div.joined-button .btn {
     width: auto;
     border-radius: 0 5px 5px 0;
@@ -623,98 +705,17 @@ form, .formio-component-fieldset.form-div {
     top: -2px;
   }
 }
-@media (max-width: 768px) {
-  /* line 499, ../sass/common.sass */
-  .form-banner {
-    background-size: 400px;
-  }
-
-  /* line 501, ../sass/common.sass */
-  .form-container {
-    margin-bottom: 180px;
-  }
-
-  /* line 504, ../sass/common.sass */
-  .footer .disclosure {
-    display: none;
-  }
-
-  /* line 507, ../sass/common.sass */
-  .header #mark {
-    display: none;
-  }
-
-  /* line 510, ../sass/common.sass */
-  #offers .progress-container {
-    border-top: 1px solid #ddd;
-    background: #f2f2f2;
-    text-align: center;
-    padding-bottom: 10px;
-  }
-  /* line 515, ../sass/common.sass */
-  #offers .progress-container .progress-label {
-    color: #de3b29;
-  }
-  /* line 517, ../sass/common.sass */
-  #offers .progress-container .progress {
-    border: 1px solid #ddd;
-  }
-  /* line 519, ../sass/common.sass */
-  #offers .offer-header {
-    text-align: center;
-    padding: 5px 10px;
-  }
-  /* line 522, ../sass/common.sass */
-  #offers .offer-header span {
-    font-style: italic;
-    font-size: 13px;
-  }
-  /* line 526, ../sass/common.sass */
-  #offers .lexlaw img {
-    max-width: 90%;
-  }
-}
-@media (min-width: 699px) {
-  /* line 531, ../sass/common.sass */
-  .form {
-    padding: 40px;
-  }
-
-  /* line 535, ../sass/common.sass */
-  .radioSelectContainer > label {
-    display: none;
-  }
-
-  /* line 537, ../sass/common.sass */
-  .extendedRadioContainer {
-    display: none;
-  }
-
-  /* line 540, ../sass/common.sass */
-  .radioContainer label {
-    margin-right: 10px;
-    font-size: 16px;
-  }
-  /* line 543, ../sass/common.sass */
-  .radioContainer label:last-child {
-    margin-right: 0;
-  }
-  /* line 545, ../sass/common.sass */
-  .radioContainer input {
-    margin-right: 3px;
-  }
-}
 @media (max-width: 699px) {
-  /* line 552, ../sass/common.sass */
+  /* line 562, ../sass/common.sass */
   .radioSelectContainer, .radioContainer {
     position: relative;
     overflow: hidden;
   }
-  /* line 556, ../sass/common.sass */
+  /* line 566, ../sass/common.sass */
   .radioSelectContainer select, .radioContainer select {
     display: none;
   }
-  /* line 558, ../sass/common.sass */
+  /* line 568, ../sass/common.sass */
   .radioSelectContainer label, .radioSelectContainer .labelContainer, .radioContainer label, .radioContainer .labelContainer {
     display: block;
     margin: 10px 0;
@@ -727,14 +728,14 @@ form, .formio-component-fieldset.form-div {
     padding: 10px;
     cursor: pointer;
   }
-  /* line 569, ../sass/common.sass */
+  /* line 579, ../sass/common.sass */
   .radioSelectContainer label:hover, .radioSelectContainer .labelContainer:hover, .radioContainer label:hover, .radioContainer .labelContainer:hover {
     background: #dbdbdb;
     background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#dbdbdb));
     background: -moz-linear-gradient(top, #fcfcfc, #dbdbdb);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#dbdbdb');
   }
-  /* line 575, ../sass/common.sass */
+  /* line 585, ../sass/common.sass */
   .radioSelectContainer label > span, .radioSelectContainer .labelContainer > span, .radioContainer label > span, .radioContainer .labelContainer > span {
     text-align: left;
     display: block;
@@ -743,34 +744,34 @@ form, .formio-component-fieldset.form-div {
     background: url("../images/right-arrow-gray.png") no-repeat right center;
     background-size: 8px 13px;
   }
-  /* line 582, ../sass/common.sass */
+  /* line 592, ../sass/common.sass */
   .radioSelectContainer label > input, .radioSelectContainer .labelContainer > input, .radioContainer label > input, .radioContainer .labelContainer > input {
     position: absolute;
     top: -20px;
   }
-  /* line 585, ../sass/common.sass */
+  /* line 595, ../sass/common.sass */
   .radioSelectContainer label > input:checked + span, .radioSelectContainer .labelContainer > input:checked + span, .radioContainer label > input:checked + span, .radioContainer .labelContainer > input:checked + span {
     background-color: #404040;
     color: #F7F7F7;
   }
-  /* line 588, ../sass/common.sass */
+  /* line 598, ../sass/common.sass */
   .radioSelectContainer label label, .radioSelectContainer .labelContainer label, .radioContainer label label, .radioContainer .labelContainer label {
     display: none;
   }
-  /* line 590, ../sass/common.sass */
+  /* line 600, ../sass/common.sass */
   .radioSelectContainer label.active, .radioSelectContainer .labelContainer.active, .radioContainer label.active, .radioContainer .labelContainer.active {
     background: #777;
     border: 2px solid #777;
     overflow: auto;
   }
-  /* line 595, ../sass/common.sass */
+  /* line 605, ../sass/common.sass */
   .radioSelectContainer label.active > span, .radioSelectContainer .labelContainer.active > span, .radioContainer label.active > span, .radioContainer .labelContainer.active > span {
     color: white;
     margin-bottom: 10px;
     background: url("../images/down-arrow-gray.png") no-repeat right center;
     background-size: 13px 8px;
   }
-  /* line 600, ../sass/common.sass */
+  /* line 610, ../sass/common.sass */
   .radioSelectContainer label.active label, .radioSelectContainer .labelContainer.active label, .radioContainer label.active label, .radioContainer .labelContainer.active label {
     display: block;
     width: 48%;
@@ -779,18 +780,18 @@ form, .formio-component-fieldset.form-div {
   }
 }
 @media (max-width: 480px) {
-  /* line 609, ../sass/common.sass */
+  /* line 619, ../sass/common.sass */
   body {
     background: #c4c9d3;
   }
 
-  /* line 611, ../sass/common.sass */
+  /* line 621, ../sass/common.sass */
   .header {
     height: 60px;
     padding: 0px 20px;
     text-align: center;
   }
-  /* line 615, ../sass/common.sass */
+  /* line 625, ../sass/common.sass */
   .header .header-brand a {
     float: none;
     margin: auto;
@@ -799,168 +800,180 @@ form, .formio-component-fieldset.form-div {
     background-size: 132px;
   }
 
-  /* line 621, ../sass/common.sass */
+  /* line 631, ../sass/common.sass */
   .form-banner {
     background-size: 360px;
     border-bottom: 5px solid #de3b29;
   }
 
-  /* line 624, ../sass/common.sass */
+  /* line 634, ../sass/common.sass */
   .form-container {
     background: none;
     padding: 0;
     margin-bottom: 100px;
   }
 
-  /* line 630, ../sass/common.sass */
+  /* line 640, ../sass/common.sass */
   .ll .form-header h1 {
     font-size: 13px;
     color: white;
     text-shadow: 0 2px 0 #b42f1f;
   }
-  /* line 634, ../sass/common.sass */
+  /* line 644, ../sass/common.sass */
   .ll .form-header h2 {
     font-size: 36px;
     color: white;
     text-shadow: 0 2px 0 #b42f1f;
   }
-  /* line 638, ../sass/common.sass */
+  /* line 648, ../sass/common.sass */
   .ll .form-header h4 {
     color: #de3b29;
   }
-  /* line 640, ../sass/common.sass */
+  /* line 650, ../sass/common.sass */
   .ll .form-header p {
     font-size: 14px;
   }
-  /* line 643, ../sass/common.sass */
+  /* line 653, ../sass/common.sass */
   .ll .form-header.big-header h1, .ll .form-header.big-header p {
     font-size: 14px;
   }
-  /* line 645, ../sass/common.sass */
+  /* line 655, ../sass/common.sass */
   .ll .form-header.big-header h2 {
     font-size: 48px;
   }
-  /* line 647, ../sass/common.sass */
+  /* line 657, ../sass/common.sass */
   .ll input.form-control, .ll select.form-control {
     display: block;
     text-align: center;
     width: 80% !important;
     margin: 0 auto 15px;
   }
-  /* line 652, ../sass/common.sass */
+  /* line 662, ../sass/common.sass */
   .ll .btn {
     width: 80%;
   }
 
-  /* line 656, ../sass/common.sass */
+  /* line 666, ../sass/common.sass */
   .form-container .ll .form-group > .control-label {
     color: white;
   }
-  /* line 658, ../sass/common.sass */
+  /* line 668, ../sass/common.sass */
   .form-container .ll .form-group.formio-component-checkbox > .control-label {
     color: white;
   }
-  /* line 660, ../sass/common.sass */
+  /* line 670, ../sass/common.sass */
   .form-container .ll .input-group {
     width: 90%;
     margin: auto;
     text-align: center;
   }
-  /* line 664, ../sass/common.sass */
+  /* line 674, ../sass/common.sass */
   .form-container .ll div.radio {
     display: block;
     width: 100%;
     margin: 15px 0;
   }
-  /* line 668, ../sass/common.sass */
+  /* line 678, ../sass/common.sass */
   .form-container .ll div.radio span {
     display: inline-block;
     width: 80%;
     height: 47px;
   }
 
-  /* line 673, ../sass/common.sass */
+  /* line 683, ../sass/common.sass */
   .body {
     display: none;
   }
 
-  /* line 675, ../sass/common.sass */
+  /* line 685, ../sass/common.sass */
   .footer {
     padding: 20px 0;
     background: #c4c9d3;
   }
-  /* line 678, ../sass/common.sass */
+  /* line 688, ../sass/common.sass */
   .footer p {
     color: #666;
     font-size: 11px;
     line-height: 14px;
   }
 
-  /* line 682, ../sass/common.sass */
+  /* line 692, ../sass/common.sass */
   body#offer-page {
     background: white;
   }
-  /* line 684, ../sass/common.sass */
+  /* line 694, ../sass/common.sass */
   body#offer-page .header {
     height: auto;
   }
-  /* line 686, ../sass/common.sass */
+  /* line 696, ../sass/common.sass */
   body#offer-page .header .header-brand a {
     margin-top: 0px;
     background-image: url("../images/santa-jackpot-logo.png");
   }
-  /* line 689, ../sass/common.sass */
+  /* line 699, ../sass/common.sass */
   body#offer-page .header .survey-header {
     padding-top: 0px;
   }
-  /* line 691, ../sass/common.sass */
+  /* line 701, ../sass/common.sass */
   body#offer-page .header .progress-bubbles {
     display: none;
   }
-  /* line 693, ../sass/common.sass */
+  /* line 703, ../sass/common.sass */
   body#offer-page .form-container {
     padding-top: 30px;
     margin-bottom: 160px;
   }
-  /* line 696, ../sass/common.sass */
+  /* line 706, ../sass/common.sass */
   body#offer-page .footer {
     background: none;
   }
 
-  /* line 699, ../sass/common.sass */
+  /* line 709, ../sass/common.sass */
   #thanks-page .form-banner {
     background-size: 460px;
     border-bottom: none;
     margin-bottom: 0px;
   }
-  /* line 703, ../sass/common.sass */
+  /* line 713, ../sass/common.sass */
   #thanks-page .form-container {
     padding-top: 20px;
     margin-bottom: 220px;
   }
-  /* line 706, ../sass/common.sass */
+  /* line 716, ../sass/common.sass */
   #thanks-page .social-share {
     padding-top: 20px;
   }
-  /* line 708, ../sass/common.sass */
+  /* line 718, ../sass/common.sass */
   #thanks-page .social-share .hashtag {
     display: none;
   }
-  /* line 711, ../sass/common.sass */
+  /* line 721, ../sass/common.sass */
   #thanks-page .form-header h1, #thanks-page .form-header h2 {
     text-shadow: none;
   }
-  /* line 713, ../sass/common.sass */
+  /* line 723, ../sass/common.sass */
   #thanks-page .footer {
     background: white;
   }
 
-  /* line 716, ../sass/common.sass */
-  #privacy h1 {
+  /* line 725, ../sass/common.sass */
+  body#privacy {
+    background: white;
+  }
+  /* line 727, ../sass/common.sass */
+  body#privacy .body {
+    display: block;
+  }
+  /* line 729, ../sass/common.sass */
+  body#privacy h1 {
     font-size: 32px;
   }
-  /* line 718, ../sass/common.sass */
-  #privacy h2 {
+  /* line 731, ../sass/common.sass */
+  body#privacy h2 {
     font-size: 21px;
+  }
+  /* line 733, ../sass/common.sass */
+  body#privacy .footer {
+    background: none;
   }
 }
