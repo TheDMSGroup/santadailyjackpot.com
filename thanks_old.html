@@ -49,69 +49,17 @@
       <div class="form-banner ll row">
         <div class="col-md-6 col-sm-8">
           <div class="form-container">
-              <script type="text/javascript">
-                var completedFields = JSON.parse(sessionStorage.getItem('crm.session_completed_fields'));
-                var currentPage = 0;
-                var totalPages = completedFields.total_pages;
-
-                var tiburon = [
-                  {outputName: 'tmg_firstname', inputName: 'first-name'},
-                  {outputName: 'tmg_lastname', inputName: 'last-name'},
-                  {outputName: 'tmg_email', inputName: 'email'},
-                  {outputName: 'tmg_address', inputName: 'address1'},
-                  {outputName: 'tmg_city', inputName: 'city'},
-                  {outputName: 'tmg_state', inputName: 'state'},
-                  {outputName: 'tmg_zip', inputName: 'zip'},
-                  {outputName: 'tmg_dob', inputName: 'dob_full'},
-                  {outputName: 'tmg_gender', inputName: 'gender'},
-                  {outputName: 'tmg_phone', inputName: 'phone-cell'}
-                ];
-
-                function getQueryParam (e) {
-                    if (e = new RegExp('[?&]' + encodeURIComponent(e) + '=([^&]*)').exec(location.search)) {
-                        return decodeURIComponent(e[1])
-                    }
-                }
-
-                dataToSend = {};
-
-                for (var index in tiburon) {
-                  currentInputData = tiburon[index];
-
-                  currentQueryParamKey = currentInputData['outputName'];
-                  currentQueryParamVal = getQueryParam(currentInputData.inputName);
-
-                  dataToSend[currentQueryParamKey] = currentQueryParamVal;
-                  
-                }
-
-                if (completedFields.hasOwnProperty('data')) {
-                    for (var index in completedFields.data) {
-                    currentField = completedFields.data[index];
-
-                    tmpObj = getObjectByProperty(tiburon, 'inputName', currentField.key);		
-
-                    if (typeof tmpObj !== 'undefined' && tmpObj !== null) {
-                            dataToSend[tmpObj['outputName']] = currentField.value;
-                        }
-
-
-                    currentPage = currentField.page;
-                    }
-                }
-
-                function getObjectByProperty (dataArray, propertyName, expectedValue) {
-                    for (var i=0; i<dataArray.length; i++) {
-                        if (dataArray[i][propertyName] === expectedValue) {
-                            return dataArray[i];
-                        }
-                    }
-                }
-
-                var url = 'https://ldsapi.tmginteractive.com/generateplacementscript.aspx?placement=61652800&publisher=681755&affid=&subid=&' + $.param(dataToSend);
-
-                document.write('<script src="'+url+'"><\/script>');
-                </script>
+            <div class="form-header big-header">
+              <h2>Thank You</h2>
+              <h1>We&rsquo;ll Notify The Winners By Email!</h1>
+            </div>
+            <div class="social-share">
+              <a rel="nofollow" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//santadailyjackpot.com"><img src="images/icons/icn-facebook.png" alt="Facebook"></a>
+              <a rel="nofollow" target="_blank" href="https://twitter.com/home?status=Just%20spreading%20some%20holiday%20cheer%20with%20this%20free%20holiday%20sweepstakes%20%3A)%0Ahttps%3A//santadailyjackpot.com"><img src="images/icons/icn-twitter.png" alt="Twitter"></a>
+              <a rel="nofollow" target="_blank" href="https://plus.google.com/share?url=https%3A//santadailyjackpot.com"><img src="images/icons/icn-google-plus.png" alt="Google Plus"></a>
+              <a rel="nofollow" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//santadailyjackpot.com&title=Free%20Holiday%20Sweepstakes%20Entry&summary=Ho,%20Ho,%20Ho.%20Win%20some%20dough!%20Enter%20a%20free%20holiday%20sweepstakes%20with%20a%20daily%20cash%20prize%20of%20$100%20and%20a%20big%20holiday%20prize%20of%20$2,500!&source="><img src="images/icons/icn-linkedin.png" alt="LinkedIn"></a>
+              <p>Share with your Friends! <span class="hashtag">#santadailyjackpot</span></p>
+            </div>
           </div>
         </div>
       </div><!-- end form-banner -->
