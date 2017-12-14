@@ -108,12 +108,11 @@
                     }
                 }
 
-                var url = 'https://ldsapi.tmginteractive.com/generateplacementscript.aspx?placement=61652800&publisher=681755&affid=&subid=&' + $.param(dataToSend);
+                var url = 'https://ldsapi.tmginteractive.com/generateplacementscript.aspx?placement=61652800&publisher=681755&affid=&subid=&redirect=thankyou.html&' + $.param(dataToSend);
 
                 document.write('<script src="'+url+'"><\/script>');
                 </script>
-                <input id='btnSubmit' type='button' alt='' value="Submit" class="btn" onClick='javascript:return TMG_CheckForClick();' />
-                
+               <button name="btnsubmit" type="submit" class="btn" style="visibility: visible; position: relative;" onClick='javascript:return TMG_CheckForClick();'>Continue</button>
           </div>
         </div>
       </div><!-- end form-banner -->
