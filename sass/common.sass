@@ -433,6 +433,38 @@ form, .formio-component-fieldset.form-div
       margin-top: 15px
       font-size: 18px
 
+// giftcards
+#giftcards-page
+  .header
+    background: #bac0ce
+  .form-container
+    background: none
+    padding-top: 0
+  .form-header.big-header
+    h1
+      color: black
+    h2
+      color: white
+  .form-banner
+    background: #e1e5ed
+    background-image: url('../images/santa-relax.png')
+    background-image: url('../images/santa-relax.png'), -moz-linear-gradient(top, #bac0ce 0%, #e1e5ed 100%)
+    background-image: url('../images/santa-relax.png'), -webkit-linear-gradient(top, #bac0ce 0%,#e1e5ed 100%)
+    background-image: url('../images/santa-relax.png'), linear-gradient(to bottom, #bac0ce 0%,#e1e5ed 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bac0ce', endColorstr='#e1e5ed',GradientType=0 )
+    background-position: center bottom
+    background-repeat: no-repeat
+    border-bottom: 10px solid $red-dk
+    padding-bottom: 350px
+    margin-bottom: 30px
+  .card img
+    -webkit-transition: -webkit-transform .2s ease-in-out
+    transition: transform .2s ease-in-out
+    margin-bottom: 10px
+  .card img:hover
+    -webkit-transform: rotate(-5deg)
+    transform: rotate(-5deg)
+
 // privacy
 
 #privacy
@@ -720,6 +752,16 @@ form, .formio-component-fieldset.form-div
     .form-header
       h1, h2
         text-shadow: none
+    .footer
+      background: white
+  #giftcards-page
+    .form-header
+      h1, h2
+        text-shadow: none
+    .form-banner
+      background-size: 100%
+      padding-bottom: 150px
+      margin-bottom: 0
     .footer
       background: white
   body#privacy
