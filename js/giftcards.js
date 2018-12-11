@@ -20,12 +20,15 @@
       'phone': getSessionParams('phone-cell'),
       'date_of_birth': getSessionParams('dob')
     }
-    url = 'https://www.fmstracker.com/rd/r.php?sid=1703&pub=440465&'
-    url += $.param(params)
     for (var i = 0; i < cards.length; i++) {
       card = cards[i]
-      card.href = url
+      card.href += '&' + $.param(params)
     }
   }
   setCardUrls()
 })()
+
+/*
+
+
+*/
