@@ -13,10 +13,10 @@
     var cards = document.getElementsByClassName('card');
     var params = {
       'email': getSessionParams('email'),
-      'first_name': getSessionParams('first-name'),
-      'last_name': getSessionParams('last-name'),
+      'first_name': getSessionParams('firstname'),
+      'last_name': getSessionParams('lastname'),
       'street1': getSessionParams('address1'),
-      'postal': getSessionParams('zip'),
+      'postal': getSessionParams('zipcode'),
       'phone': getSessionParams('phone-cell'),
       'date_of_birth': getSessionParams('dob')
     }
